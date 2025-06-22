@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+ * Example of RSS Ticker Styling
+ *
+ */
+
+.rssFeed {
+    font-size: small;
+    width: 400px;
+}
+
+.rssFeed a {
+    color: #7ED8FE;
+    text-decoration: none;
+}
+
+.rssFeed a:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+.rssHeader {
+    padding: 0.2em 35px;
+    font-size: 11.8px;
+}
+
+.rssRow h4 {
+    margin: 0;
+    padding: 0.5em;
+}
+
+.rssRow p,
+.rssRow div {
+    display: none;
+}

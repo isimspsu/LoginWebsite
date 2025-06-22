@@ -1,0 +1,467 @@
+/*menu css*/
+
+#top_navigation {
+    border-bottom: 2px solid #33EEBA;
+    float: left;
+    margin-left: 33px;
+    z-index: 5;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #444444;
+    font-family: "MYRIADPROREGULAR";
+}
+
+#top_navigation ul.dropdown li.dir {
+    background: url("../../../App_Themes/Default/images/arrow1.png");
+    background-position: right 8px;
+    background-repeat: no-repeat;
+}
+
+#top_navigation ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    height: 29px;
+    padding: 4px 12px;
+}
+
+#top_navigation ul.dropdown {
+    position: relative;
+    z-index: 597;
+    float: left;
+}
+
+#top_navigation ul.dropdown a {
+    color: #ffffff;
+}
+
+#top_navigation ul.dropdown li {
+    float: left;
+    min-height: 1px;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+
+#top_navigation ul.dropdown li.hover,
+#top_navigation ul.dropdown li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+#top_navigation ul.dropdown ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    z-index: 598;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#top_navigation ul.dropdown ul li {
+    float: none;
+    background-color: #444444;
+}
+
+#top_navigation ul.dropdown ul ul {
+    top: 1px;
+    left: 99%;
+}
+
+#top_navigation ul.dropdown li:hover>ul {
+    visibility: visible;
+}
+
+/*Profile Drop Down*/
+
+ul,
+ol {
+    list-style: none outside none;
+    margin: 0px;
+    padding: 0px;
+}
+
+#top_navigation_profile ul li a.profile {
+    float: left;
+    margin-right: 20px;
+    width: 20px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+}
+
+#top_navigation_profile ul li a.profile1 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/5starimages.png") no-repeat scroll transparent;
+    margin-top: 18px;
+    margin-left: 20px;
+    width: 20px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+}
+
+#top_navigation_profile ul li a.profile:hover {
+    float: left;
+    margin-right: 20px;
+    width: 20px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+}
+
+#top_navigation_profile ul.dropdown {
+    top: 4px;
+    padding: 4px 12px;
+}
+
+#top_navigation_profile ul.dropdown,
+#top_navigation_profile ul.dropdown li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 20px;
+    height: 21px;
+}
+
+#top_navigation_profile ul.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    width: 100px;
+    height: 21px;
+    padding: 4px 12px;
+}
+
+#top_navigation_profile ul.dropdown {
+    position: relative;
+    z-index: 597;
+    float: left;
+}
+
+#top_navigation_profile ul.dropdown a {
+    color: #ffffff;
+}
+
+#top_navigation_profile ul.dropdown li {
+    float: left;
+    min-height: 1px;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+
+#top_navigation_profile ul.dropdown li.hover,
+#top_navigation_profile ul.dropdown li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+#top_navigation_profile ul.dropdown ul {
+    visibility: hidden;
+    position: absolute;
+    top: 20px;
+    left: -166px;
+    display: block;
+    padding-top: 20px;
+}
+
+#top_navigation_profile ul.dropdown ul li {
+    background-color: #015a82;
+    width: 250px;
+    display: block;
+    padding: 4px 12px;
+    border-bottom: 1px solid #ffffff;
+}
+
+#top_navigation_profile ul.dropdown ul ul {
+    top: 1px;
+    left: 99%;
+}
+
+#top_navigation_profile ul.dropdown li:hover>ul {
+    visibility: visible;
+}
+
+/*menu css end*/
+
+/* star css */
+
+#top_navigation_star {
+    border-bottom: 2px solid #33EEBA;
+    float: left;
+    margin-left: 33px;
+    z-index: 5;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    background-color: #444444;
+    font-family: "MYRIADPROREGULAR";
+}
+
+#top_navigation_star ul.dropdown li.dir {
+    background: url("../../../App_Themes/Default/images/arrow1.png");
+    background-position: right 8px;
+    background-repeat: no-repeat;
+}
+
+#top_navigation_star ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+    height: 29px;
+}
+
+#top_navigation_star ul.dropdown {
+    position: relative;
+    z-index: 597;
+    float: left;
+}
+
+#top_navigation_star ul.dropdown a {
+    color: #ffffff;
+}
+
+#top_navigation_star ul.dropdown li {
+    float: left;
+    min-height: 1px;
+    line-height: 1.3em;
+    vertical-align: middle;
+}
+
+#top_navigation_star ul.dropdown li.hover,
+#top_navigation ul.dropdown li:hover {
+    position: relative;
+    z-index: 599;
+    cursor: default;
+}
+
+#top_navigation_star ul.dropdown ul {
+    visibility: hidden;
+    position: absolute;
+    top: 100%;
+    left: -10px;
+    z-index: 598;
+    width: 100%;
+    padding-top: 10px;
+}
+
+#top_navigation_star ul.dropdown ul li {
+    float: none;
+    background-color: #444444;
+}
+
+#top_navigation_star ul.dropdown ul ul {
+    top: 1px;
+    left: 99%;
+}
+
+#top_navigation_star ul.dropdown li:hover>ul {
+    visibility: visible;
+}
+
+#top_navigation_star ul li a.star1 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star1.png") no-repeat scroll transparent;
+    width: 120px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#top_navigation_star ul li a.star2 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star2.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#top_navigation_star ul li a.star3 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star3.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#top_navigation_star ul li a.star4 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star4.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#top_navigation_star ul li a.star5 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star5.png") no-repeat scroll transparent;
+    width: 100px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#top_navigation_star ul li a.graystar5 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/graystar5.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar {
+    margin: 0;
+    padding: 0;
+    height: 1em;
+}
+
+#navbar li {
+    list-style: none;
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    padding: 3px 8px;
+    background-color: #5e8ce9;
+    color: #fff;
+    text-decoration: none;
+}
+
+#navbar li ul {
+    background-color: #FEFEFE;
+    border: 1px solid #444444;
+    border-radius: 5px 5px 5px 5px;
+    display: none;
+    height: 185px;
+    line-height: 15px !important;
+    margin-top: 5px;
+    padding: 4px !important;
+    top: 24px;
+    width: 171px;
+    z-index: 99999;
+}
+
+#navbar li ul span {
+    color: #333333;
+    position: relative;
+    top: 5px;
+}
+
+#navbar li:hover ul,
+#navbar li.hover ul {
+    display: block;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li:hover li,
+#navbar li.hover li {
+    float: none;
+}
+
+#navbar li:hover li a,
+#navbar li.hover li a {
+    background-color: #69f;
+    border-bottom: 1px solid #fff;
+    color: #000;
+}
+
+#navbar li li a:hover {
+    background-color: #8db3ff;
+}
+
+#navbar ul li a.star1 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star1.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul li a.star2 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star2.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul li a.star3 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star3.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul li a.star4 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star4.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul li a.star5 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/star5.png") no-repeat scroll transparent;
+    width: 100px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul li a.graystar5 {
+    float: left;
+    background: url("../../../App_Themes/Default/images/graystar5.png") no-repeat scroll transparent;
+    width: 120px;
+    height: 21px;
+    display: block;
+    cursor: hand;
+    margin-top: 0px;
+    background-size: 80px;
+}
+
+#navbar ul ul li img {
+    width: 80px;
+}

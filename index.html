@@ -1,0 +1,592 @@
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml"><head id="Head1">
+<meta charset="utf-8"><title>
+	SIM Login
+</title><link rel="shortcut icon" href="../favicon.ico"><link href="css/login.css" rel="stylesheet" type="text/css"><link href="css/login.css" rel="stylesheet" type="text/css">
+    <style>
+        .clsMessage
+        {
+            z-index: 99999 !important;
+        }
+        .clsMessage > div
+        {
+            padding: 10px !important;
+            border: 0px solid red !important;
+            left: 0px !important;
+        }
+        #loginpar
+        {
+            position: relative;
+            top: -22px;
+            color: #ffffff;
+            left: 20px;
+        }
+        #Image1
+        {
+            margin: 20px 20px 0px 100px !important;
+        }
+        .transparent1
+        {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            display: none;
+            z-index: 65;
+            zoom: 1;
+            filter: alpha(opacity=50);
+            opacity: 0.5;
+            background-color: gray;
+        }
+        .shape
+        {
+            border-top: 55px solid #148fae;
+            border-left: 20px solid transparent;
+            border-right: 20px solid transparent;
+            height: 0;
+            width: 78%;
+            position: absolute;
+            top: -10px;
+        }
+        .right-container
+        {
+            width: 370px;
+            position: absolute;
+            height: 394px;
+            top: 15%;
+            left: 2%;
+            background: rgba(255,255,255,0.5) !important;
+            border-radius: 8px;
+            box-shadow: 0em 1em 1.2em 0em;
+        }
+        body
+        {
+            background-image: url(images/bg.jpg) !important;
+            background-repeat: no-repeat;
+            background-size: 100vw 100vh !important;
+        }
+        .left-container, .header-container, #BottomImages, .login-text
+        {
+            display: none;
+        }
+        #loginpar input[type=radio]:checked ~
+        .check
+        {
+            border: 5px solid #ffffff;
+        }
+        #loginpar input[type=radio]:checked ~
+        .check::before
+        {
+            background: #ffffff;
+        }
+        #loginpar input[type=radio]:checked ~
+        label
+        {
+            color: #ffffff;
+        }
+        #loginpar ul li
+        {
+            color: #AAAAAA;
+            display: block;
+            position: relative;
+            float: left;
+            width: 40%;
+        }
+        #loginpar ul li input[type=radio]
+        {
+            position: absolute;
+            visibility: hidden;
+        }
+        #loginpar ul li label
+        {
+            display: block;
+            position: relative;
+            font-weight: 300;
+            font-size: 15px;
+            padding: 2px 5px 5px 25px;
+            font-weight: bold;
+            margin: 0 auto;
+            top: 0px;
+            z-index: 9;
+            cursor: pointer;
+            -webkit-transition: all 0.25s linear;
+        }
+        #loginpar ul li:hover label
+        {
+            color: rgb(170, 170, 170);
+        }
+        #loginpar ul li .check
+        {
+            display: block;
+            position: absolute;
+            border: 5px solid #aaaaaa;
+            border-radius: 100%;
+            height: 10px;
+            width: 10px;
+            top: 0px;
+            left: 0px;
+            z-index: 5;
+            transition: border .25s linear;
+            -webkit-transition: border .25s linear;
+        }
+        #loginpar ul li:hover .check
+        {
+            border: 5px solid #FFFFFF;
+        }
+        #loginpar ul li .check::before
+        {
+            display: block;
+            position: absolute;
+            content: '';
+            border-radius: 100%;
+            height: 8px;
+            width: 8px;
+            top: 1px;
+            left: 1px;
+            margin: auto;
+            transition: background 0.25s linear;
+            -webkit-transition: background 0.25s linear;
+        }
+        #loginpar .left
+        {
+            float: left;
+        }
+        .box-login
+        {
+            width: 370px;
+            height: 394px;
+        }
+        #login
+        {
+            background: none !important;
+        }
+        .text_field
+        {
+            width: 80%;
+            background: #cccccc !important;
+            border-radius: 4px;
+            clear: both;
+            margin-top: 10px;
+            margin-left: 25px; /*top: 20px;*/ /*position: relative;*/
+            height: 40px;
+            display: block;
+            padding: 5px 10px !important;
+        }
+        .LogBtn
+        {
+            background: #148fae !important;
+            color: #ffffff !important;
+            font-size: 15px !important;
+            padding: 5px !important;
+            height: 40px !important;
+            font-weight: bold;
+            text-shadow: 2px 2px #0b5a6b !important;
+        }
+        .left
+        {
+            float: left;
+        }
+        .text-box-background
+        {
+            background: none !important;
+            width: 100% !important;
+            border: 0px;
+            margin-right: 10px;
+            height: 42px !important;
+            font-size: 14px !important;
+        }
+        .fieldContainer
+        {
+            padding-top: 0px !important;
+        }
+        .forgot-pass
+        {
+            position: fixed;
+            top: 20%;
+            left: 35%;
+            background-color: #fefefe;
+            border: 1px solid #efefef;
+            border-radius: 5px;
+            padding: 10px;
+            width: 25%;
+            height: 250px;
+            z-index: 9999;
+        }
+        @media (min-width: 448px) and (max-width:768px)
+        {
+            .forgot-pass
+            {
+                top: 10%;
+                left: 7%;
+                width: 80%;
+            }
+            body
+            {
+                background: none !important;
+                background-color: #333333 !important;
+            }
+            .right-container
+            {
+                right: 11% !important;
+            }
+        }
+        .LogBtn
+        {
+            width: 135px !important;
+        }
+        .margin-none
+        {
+            margin: 0px !important;
+            padding: 0px !important;
+            color: #148fae !important;
+        }
+        .footer-container
+        {
+            position: fixed;
+            bottom: 0px;
+            width: 100% !important;
+        }
+        .footer-container p
+        {
+            width: 100% !important;
+        }
+        .collegelogo
+        {   display:none;
+            padding: 20px;
+            /*background: #ffffff;*/
+            margin: 20px;
+            border-radius: 10px;
+            width:200px;
+        }
+    </style>
+    
+    <script>
+
+
+        function pageRedirect() {
+
+            if (window.location.port == "8088") {
+                window.location.replace("https://abesit.servergi.com:8078/ISIMABESIT/login");
+            }
+        }
+        setTimeout("pageRedirect()", 800);
+
+    
+    </script>
+</head>
+<body>
+<div class="aspNetHidden">
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTE4OTg5ODg2NzQPFgIeBHJuZDEFF3R4dEIzUlRxNGtDNUE3UVM4aDFsNjZqFgICAw8WAh4GYWN0aW9uBSwvSVNJTVNQU1UvTG9naW4/UmV0dXJuVXJsPSUyZklTSU1TUFNVJTJmSG9tZRYIZg8PFgIeBFRleHQFnwE8aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L0ltYWdlcy90b3AtcmFua2VkMS5qcGciPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvSW1hZ2VzL3RvcC1yYW5rZWQyLmpwZyI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9JbWFnZXMvdG9wLXJhbmtlZDMuanBnIj5kZAIGD2QWAgIBDw8WBB4IQ3NzQ2xhc3MFE3RleHQtYm94LWJhY2tncm91bmQeBF8hU0ICAmRkAgkPFgIeCWlubmVyaHRtbGVkAgwPDxYCHwJlZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFC3Jkb1N0ZHVkZW50BQlyZG9QYXJlbnTcCJXjn0ji0VFfVnimKLTDXx3L36l+LRtacAg1CforDg==">
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['form1448'];
+if (!theForm) {
+    theForm = document.form1448;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<script src="WebResource.axd" type="text/javascript"></script>
+
+
+<script src="ScriptResource.axd" type="text/javascript"></script>
+<script src="WebResource_1.axd" type="text/javascript"></script>
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="E9B55AD5">
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdABCPoGmWY5OFIN5wx74uDFXPI/0QHjJyv3up1lyZenZNez1xyRbWe/TKfvF1ac8PnqvJOLQWPTCrwG7ISafarKHjQ9M+R09aX7xg3Y20MK3GJ3BlgyWxc+8zs05/mTHjwOfEad0FOf4UmMljDYCrGBNTdR0EwpzUYcbR2kxjpjYAMXA322WZiESQiPKsdVblpmiiyFosusFNStNsWTY71bP9GVTpRe3Sx1U3hk9/woanOFG+kA/e53o1Ys/lVcXkY5ZjemWCTRgEB59HPczIGVNwWNUNVnmxwXS8PFfDyvS1LxKekJuqqgYBm/AZmfRxRA4vXJDYpx9bKpeQm3ZRFe8KUbL1LySPFvhgbqElONB4YXLhzU85wAEz51Z2nJoXMa4=">
+</div>
+    <div class="logo" style="display: none;">
+        <img src="App_Themes/Default/Assets/Images/logo.jpg"></div>
+    <div class="main-container">
+        <img src="assets/images/login-logo.png" class="collegelogo">
+        <div class="header">
+            <div class="header-container">
+                <img src="images/global-infoways-logo.jpg"><img src="images/sim-logo.jpg" align="right"></div>
+            <div class="middle-container">
+                <div class="left-container">
+                    <span id="FrontImages"><img src="images/top-ranked1.jpg"><img src="images/top-ranked2.jpg"><img src="images/top-ranked3.jpg"></span>
+                </div>
+                <div class="right-container">
+                    <img src="images/login-heading.png" style="display: none;">
+                    <div id="login">
+                        
+                        <div>
+                            
+                            <div class="shape">
+                            </div>
+                            <div id="loginpar">
+                                <br>
+                                <ul>
+                                    <li class="left">
+                                        <input value="rdoStdudent" name="selector" type="radio" id="rdoStdudent" checked="checked" onchange="rdoStdParOnChange();">
+                                        <label for="rdoStdudent">
+                                            Student</label>
+                                        <div class="check">
+                                        </div>
+                                    </li>
+                                    <li class="left">
+                                        <input value="rdoParent" name="selector" type="radio" id="rdoParent" onchange="rdoStdParOnChange();">
+                                        <label for="rdoParent">
+                                            Parent</label>
+                                        <div class="check">
+                                            <div class="inside">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="fieldContainer">
+                                <span class="login-text">
+                                    <asp:label id="LoginLabel" clientidmode="Static"></asp:label></span> <span class="text_field"><span class="left">
+                                        <img src="images/icon-user.jpg"></span><span class="left">
+                                            <input name="__txtUserId100" type="text" id="__txtUserId100" class="text-box-background" placeholder="USERNAME" title="User ID" blank="1" autocomplete="false">
+                                        </span>
+                            </span></div>
+                            <div class="fieldContainer">
+                                <span class="login-text">Password</span> <span class="text_field"><span class="left" style="margin-top: 2px;">
+                                    <img src="images/password.jpg"></span><span class="left">
+                                        <input name="txtPass" type="password" id="txtPass" class="text-box-background" placeholder="PASSWORD" title="Password" blank="1">
+                                    </span>
+                            </span></div>
+                            <div class="fieldContainer">
+                                <span style="text-align: center; width: 100%;">
+                                    <img id="Image1" src="images/capimage.jpg" style="height:40px;width:100px;">
+                                </span>
+                            </div>
+                            <div class="fieldContainer">
+                                <span class="login-text">Enter Above Code </span><span class="text_field">
+                                    <div id="pnlInfo1" placeholder="ENTER ABOVE CODE">
+	
+                                    <input name="txtB3RTq4kC5A7QS8h1l66j" type="text" id="txtB3RTq4kC5A7QS8h1l66j" class="text-box-background">
+</div>
+                                </span>
+                                <div class="fieldContainer">
+                                    <span class="spnRight1">
+                                        <a onclick="return lnkbtnForgotPass_Click();" id="lnkbtnForgotPass" href="javascript:__doPostBack('lnkbtnForgotPass','')">Forgot Password ?</a>
+                                    </span>
+                                </div>
+                                <div>
+                                    <br>
+                                    <br>
+                                </div>
+                                <div class="GrayTab">
+                                    <center>
+                                        <button type="button" onclick="redirectToHome()" class="LogBtn">LOGIN</button>
+                                        <p id="error-message" style="color: red; font-weight: bold; display: none;">
+  ❌ Invalid username or password
+</p>
+
+
+                                    </center>
+                                </div>
+                                <div id="divMsg" class="clsMessage"></div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="button" name="btnValue" value="Button" onclick="javascript:__doPostBack('btnValue','')" id="btnValue" style="display: none;">
+                                </div>
+                                <input name="zx1234" type="text" id="zx1234" class="text-box-background" value="0" title="User ID" style="height:28px;width:10px;display: none;">
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            function pageLoad() {
+                                rdoStdParOnChange();
+                                DisplayMessage("divMsg");
+                            } </script>
+
+                    </div>
+                </div>
+            </div>
+            <span id="BottomImages"></span>
+        </div>
+        <input type="hidden" name="hidsetname" id="hidsetname" value="ok">
+        <input type="hidden" name="hdnShowInstruction" id="hdnShowInstruction" value="0">
+    </div>
+    <div id="divForgetlogin1" style="display: none;" class="transparent1">
+    </div>
+    <div id="divForgetlogin" style="display: none;" class="forgot-pass">
+        <div>
+            <center>
+                <h1 class="margin-none">
+                    Forgot Password</h1>
+            </center>
+            <div>
+                <span class="fieldValue text_field">
+                    <input name="txtUserName" type="text" maxlength="20" id="txtUserName" class="text-box-background" placeholder="USER ID" blank="1" style="height:28px;">
+                </span>
+            </div>
+            <div>
+                <span class="fieldValue text_field">
+                       <input name="txtdateofBirth" type="text" maxlength="10" id="txtdateofBirth" class="text-box-background CDate" placeholder="Student DOB(dd/mm/yyyy)" blank="1" style="height:28px;">
+                   </span>
+            </div>
+            <div>
+                <span id="lblEmail_disp"></span></div>
+            <div class="GrayTab" style="text-align: center; clear: both; margin-top: 30px;">
+                <input type="submit" name="btnSend" value="Reset Password" onclick="return ValidateSend();" id="btnSend" class="LogBtn">
+                <input type="submit" name="btnCan" value="Close" onclick="return Cancel_Click();" id="btnCan" class="LogBtn">
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+//<![CDATA[
+Sys.WebForms.PageRequestManager._initialize('LoginManager', 'form1448', ['tUpdatePanel1','UpdatePanel1'], [], [], 90, '');
+//]]>
+</script>
+
+    <div>
+        <div id="UpdatePanel1">
+	
+            
+</div>
+    </div>
+
+    <script type="text/javascript">        $(document).ready(function() {
+            $("#pnlInfo1 > input").attr("placeholder", "Enter Above Code");
+        });
+
+        function ValidateLogin() {
+            var isValid = false;
+            //  var Username = $.trim($("#txtUserId").val());
+
+            var Username = $.trim($("#__txtUserId100").val());
+            var Userpass = $.trim($("#txtPass").val());
+            if (Username == "" && Userpass != "") {
+                DisplayMessageClient("divMsg", "Please enter the Login Name", 0);
+            }
+            else if (Username != "" && Userpass == "") {
+                DisplayMessageClient("divMsg", "Please enter the Login Password", 0);
+            }
+            else if (Username == "" && Userpass == "") {
+                DisplayMessageClient("divMsg", "Please enter the Login Name and Login Password", 0);
+            }
+            else {
+                document.getElementById("zx1234").value = Username;
+                isValid = true;
+            }
+            //    alert(isValid);
+            //    alert(document.getElementById("hdnValstr").value);
+            //document.getElementById("btnValue").click();
+            return isValid;
+        }
+
+        /*********************For Mail ***************/
+
+        function lnkbtnForgotPass_Click() {
+            $('#divForgetlogin').show();
+            $('#divForgetlogin1').show();
+            return false;
+        }
+
+        function Cancel_Click() {
+            $('#divForgetlogin').hide();
+            $('#divForgetlogin1').hide();
+            $.trim($("#txtUserName").val(''));
+            $.trim($("#txtdateofBirth").val(''));
+
+            return false;
+        }
+
+        function ValidateSend() {
+            var flag = false;
+            var Username = $.trim($("#txtUserName").val());
+            var Dob = $.trim($("#txtdateofBirth").val());
+
+            if (Username == "" && Dob != "") {
+                DisplayMessageClient("divMsg", "Please enter the Login Name ", 0);
+                flag = false;
+            }
+            else if (Username != "" && Dob == "") {
+                DisplayMessageClient("divMsg", "Please enter the DOB ", 0);
+                flag = false;
+            }
+            else if (Username == "" && Dob == "") {
+                DisplayMessageClient("divMsg", "Please enter the Login Name and DOB ", 0);
+                flag = false;
+            }
+
+            else {
+                flag = true;
+            }
+            return flag;
+        }
+
+        function rdoStdParOnChange() {
+            //            var SelectedItem = $('#rdoStdudent').prop(":checked").val();
+            //            alert(SelectedItem);
+
+            if ($('#rdoStdudent').is(":checked")) {
+                $('#LoginLabel').text("Student Login");
+                $('#lblUserName').text("Student Login");
+            }
+            else if ($('#rdoParent').is(":checked")) {
+                $('#LoginLabel').text("Parent Login");
+                $('#lblUserName').text("Parent Login");
+            }
+        }
+
+        function setname() {
+            document.getElementById("hidsetname").value = "ok";
+        }
+
+    </script>
+
+    
+
+<script type="text/javascript">
+//<![CDATA[
+WebForm_AutoFocus('__txtUserId100');//]]>
+</script>
+</form>
+    <div class="footer-container">
+        <p>
+            Powered by <span style="color: #000A9D;">Global</span> <span style="color: #5FB313;">Infoventures Pvt. Ltd.</span>
+        </p>
+    </div>
+    <style>
+        input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill
+        {
+            background: #cccccc !important;
+        }
+    </style>
+<script>
+    function redirectToHome() {
+    var username = document.getElementById("__txtUserId100").value;
+    var password = document.getElementById("txtPass").value;
+
+    var correctUsername = "24CS003223";     // ✅ Set your correct username
+    var correctPassword = "26092005";      // ✅ Set your correct password
+
+    if (username === correctUsername && password === correctPassword) {
+        window.location.href = "Home/Home.html";
+    } else {
+        document.getElementById("error-message").style.display = "block";
+    }
+}
+
+</script>
+<script>
+document.getElementById("__txtUserId100").addEventListener("input", function () {
+    document.getElementById("error-message").style.display = "none";
+});
+document.getElementById("txtPass").addEventListener("input", function () {
+    document.getElementById("error-message").style.display = "none";
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,555 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<link type="text/css" rel="stylesheet" href="App_Themes/Assets/sim.css">
+<link type="text/css" rel="stylesheet" href="App_Themes/Assets/bootstrap.css">
+<link type="text/css" rel="stylesheet" href="App_Themes/Assets/menu.css">
+<link type="text/css" rel="stylesheet" href="App_Themes/Assets/glyphicons.css">
+<link type="text/css" rel="stylesheet" href="App_Themes/Assets/inside.css">
+<link href="App_Themes/Assets/bootstrap.min.css" rel="stylesheet" type="text/css" />
+
+<head id="Head1">
+    <title>
+
+    </title>
+
+    <script src="App_Themes/Assets/JS/jquery.min.js"></script>
+
+
+
+
+</head>
+
+<body oncontextmenu="return false" oncopy="return false" oncut="return false" onpaste="return false">
+    <div id="feedbackForm">
+</div>
+
+        <div class="aspNetHidden">
+        
+        </div>
+
+        <div class="aspNetHidden">
+
+           
+        </div>
+        <div>
+            <input type="hidden" name="ctl00$ctl00$hdnForSchoolMaster" id="hdnForSchoolMaster" value="0" />
+            <input type="hidden" id="hdnAppPath" value="/ISIMSPSU/" />
+            <input name="ctl00$ctl00$txtCaseCSS" type="text" id="txtCaseCSS" value="textDefault" style="display: none;" />
+            <div class="navbar navbar-inverse navbar-fixed-top noprint">
+                <div class="navbar-inner">
+                    <div class="container_top">
+                        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                        </span>
+                    </button>
+                        <div class="brand">
+                            <span class="left">
+                            <img src="App_Themes/images/sim-logo.png"> class="logo" /></span>
+                            <span class="left"><a href="../Home">SIM</a><div>
+                            Student Interface</div>
+                        </span><span class="left">
+                            <span id="headerImage"><img src="App_Themes/images/for.png" width="21" height="57" /></span>
+                            </span>
+                            <span id="collegelogo"><span class="left"> <img src="App_Themes/images/college-logo.png" class="collegelogo" /></span></span>
+                            <span class="left" style="display: none;">
+                            <span id="HeaderName"><a href="../home">SPSU</a></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="pull-right">
+                        <a href="../Home"><i class="glyphicon home glyphicon-home"></i></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="clsRounded">
+                <div id="MCPH1_PageHeader" class="pageHeader">
+                    <span id="MCPH1_spnPageTitle" style="margin-left: 5px;"></span>
+                </div>
+
+                <style>
+                    .clear {
+                        clear: both !important;
+                    }
+
+                    .image-border {
+                        border: 1px solid grey;
+                    }
+
+                    .mb20 {
+                        margin-bottom: 20px;
+                    }
+
+                    #MCPH1_SCPH_lblempname {
+                        color: #7C7C7C;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                    }
+
+                    .blue {
+                        color: #4A8BC2;
+                        font-weight: bold;
+                    }
+
+                    .linkselect {
+                        color: blue;
+                        text-decoration: underline;
+                    }
+
+                    .linkselect:hover {
+                        color: blue;
+                        text-decoration: underline;
+                    }
+                </style>
+                <div id="divTransparent" class="transparent1">
+                </div>
+                <div style='display: block'>
+                    <div class="container">
+                        <div class="primary_container">
+                            <h1>
+                                Student Feedback
+                            </h1>
+                            <div id="TabContainer" class="fieldBlock">
+                                <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$hdnTabIndex" id="hdnTabIndex" value="0" />
+                                <div id="EnquiryContainer">
+                                    <div class="fieldBlock" id="MainContainer">
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HdnSetupId" id="HdnSetupId" />
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HIsExist" id="HIsExist" />
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HExtSubjectID" id="HExtSubjectID" />
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HExtFacultyID" id="HExtFacultyID" />
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HCloseDiv" id="HCloseDiv" />
+                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HdnOldFeedback" id="HdnOldFeedback" />
+                                        <div id="divTransparent1" class="transparent" style="display: none;">
+                                        </div>
+                                        <table width="100%">
+                                            <tr>
+                                                <td colspan="3">
+                                                    <div id="gridContainer">
+                                                        <table cellpadding="4" cellspacing="4" width="100%">
+                                                            <tr>
+                                                                <td width="18%">
+                                                                    <strong>Admission No:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtAddmissionNo" class="aspNetDisabled ctrltxt1">24CS003223</span>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <strong>Student Name:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtStudentName" class="aspNetDisabled ctrltxt1">Krishna Goyal</span>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <strong>Session:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtSession" class="aspNetDisabled ctrltxt1" MaxLength="2" style="position: static">2024-25</span>
+                                                                </td>
+                                                            </tr>
+                                                            <tr class="GrdAltRow" style="display: none;">
+                                                                <td width="18%">
+                                                                    <strong>Program:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtprogram" class="aspNetDisabled ctrltxt1" MaxLength="2">B.Tech CSE (AIML-Xebia)</span>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <strong>Father Name:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtFatherName" class="aspNetDisabled ctrltxt1" MaxLength="2">Sunil Kumar Goyal</span>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <strong>Semester:</strong>
+                                                                </td>
+                                                                <td width="18%">
+                                                                    <span id="MCPH1_SCPH_txtSemester" class="aspNetDisabled ctrltxt1" MaxLength="2">Sem III</span>
+                                                                </td>
+                                                            </tr>
+                                                        </table>
+                                                    </div>
+                                                    <div>
+                                                        <div class="sectionHeader" style="width: 900px;">
+                                                            <div class="fieldValue" style="width: 400px; float: left;">
+                                                                Faculty Feed Back By Student</div>
+                                                        </div>
+                                                        <div>
+                                                            <strong>
+                                                    <span id="MCPH1_SCPH_lblNote"></span></strong><br>
+                                                            <br>
+                                                            <table border="0" cellpadding="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td valign="top" width="40%">
+                                                                        1- Feedback for each faculty is mandatory.
+                                                                    </td>
+                                                                    <td width="60%">
+                                                                        2- Select Faculty from the list for feedback followed by particular ratings and remarks
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td valign="top">
+                                                                        3- After Filling Particulars rating and remarks.
+                                                                    </td>
+                                                                    <td>
+                                                                        4- Please Click on Save button .
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </div>
+                                                        <span id="MCPH1_SCPH_lblmsg2" style="font-weight:bold;color: #FF0000; display: inline-block;
+                                                font-weight: bold; left: 288px; position: relative; text-align: center; width: 215px;"></span></div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3">
+                                                    <div id="MCPH1_SCPH_divFeedBackList" class="GridInnerContent top-heading">
+                                                        <div class="sectionHeader">
+                                                            <span class="fieldValue">Currently Opened FeedBack</span>
+                                                        </div>
+                                                        <div id="gridContainer">
+                                                            <div>
+
+                                                            </div>
+                                                            <div id="PnlPopupHistory" class="SetWindowStdDuesData white" style="z-index: 3; display: none;">
+                                                                <div class="mb20">
+                                                                </div>
+                                                                <span id="MCPH1_SCPH_lblmsg" style="color:#FF3366;font-size:10pt;font-weight:bold;text-align: center; margin: 0 auto; display: block;"></span>
+                                                                <div id="MCPH1_SCPH_gvFacultyEvalSubMap" class="span12">
+                                                                    <div class="sectionHeader clear">
+                                                                        <span>Detail</span>
+                                                                    </div>
+                                                                    <div class="clear text-center">
+                                                                        <h4 class="blue">
+                                                                            <span id="MCPH1_SCPH_lblFeedBackName1"></span></h4>
+                                                                    </div>
+                                                                    <div>
+
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clear">
+                                                                </div>
+                                                                <div id="MCPH1_SCPH_gvRating" class="span12">
+                                                                    <div class="sectionHeader span6">
+                                                                        <span>Rating Questions</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div id="MCPH1_SCPH_img1" class="span6">
+                                                                            <div class="right">
+                                                                                <div class="text-center">
+
+                                                                                    <script type="text/javascript">
+                                                                                        var w = 1
+                                                                                        var h = 1
+
+                                                                                        function gettrailobj() {
+                                                                                            if (document.getElementById) return document.getElementById("trailimageid").style
+                                                                                            else if (document.all) return document.all.trailimagid.style
+                                                                                        }
+
+                                                                                        function truebody() {
+                                                                                            return (!window.opera && document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+                                                                                        }
+
+                                                                                        function hidetrail() {
+                                                                                            if (document.getElementById("trailimageid") != null) {
+                                                                                                document.onmousemove = ""
+                                                                                                document.getElementById('ttimg').src = 'img/s.gif'
+                                                                                                gettrailobj().visibility = "hidden"
+                                                                                                gettrailobj().left = -1000
+                                                                                                gettrailobj().top = 0
+                                                                                            }
+                                                                                        }
+
+
+                                                                                        function showtrail(width, height, file) {
+
+                                                                                            if (document.getElementById('trailimageid') != null)
+                                                                                                if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+                                                                                                    w = width
+                                                                                                    h = height
+                                                                                                    gettrailobj().visibility = "visible"
+                                                                                                    gettrailobj().width = w + 7 + "px"
+                                                                                                    gettrailobj().height = h + 7 + "px"
+                                                                                                    document.getElementById('ttimg').src = file
+                                                                                                    document.getElementById('ttimg').style.width = w + "px"
+                                                                                                    document.getElementById('ttimg').style.height = h + "px"
+                                                                                                    document.onmousemove = followmouse
+
+                                                                                                }
+                                                                                            else {
+                                                                                                $("#ifrmaeImg").attr("title", "No Preview..!!");
+                                                                                            }
+                                                                                        }
+
+
+                                                                                        function followmouse(e) {
+
+                                                                                            if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+
+                                                                                                var xcoord = 20
+                                                                                                var ycoord = 20
+
+                                                                                                if (typeof e != "undefined") {
+                                                                                                    xcoord += e.pageX
+                                                                                                    ycoord += e.pageY
+                                                                                                } else if (typeof window.event != "undefined") {
+                                                                                                    xcoord += truebody().scrollLeft + event.clientX
+                                                                                                    ycoord += truebody().scrollTop + event.clientY
+                                                                                                }
+
+                                                                                                var docwidth = document.all ? truebody().scrollLeft + truebody().clientWidth : pageXOffset + window.innerWidth - 15
+                                                                                                var docheight = document.all ? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+                                                                                                if (xcoord + w + 3 > docwidth)
+                                                                                                    xcoord = xcoord - w - (20 * 2)
+
+                                                                                                if (ycoord - truebody().scrollTop + h > truebody().clientHeight)
+                                                                                                    ycoord = ycoord - h - 20;
+
+                                                                                                gettrailobj().left = xcoord + "px"
+                                                                                                gettrailobj().top = ycoord + "px"
+
+                                                                                            }
+
+                                                                                        }
+                                                                                    </script>
+                                                                                    <div>
+                                                                                        <div class="">
+                                                                                            <img id="MCPH1_SCPH_ViewPhoto_ifrmaeImg" style="left: -20; top: -20;" class="image-border" frameborder="0" height="50px" width="50px" />
+                                                                                        </div>
+                                                                                    </div>
+
+                                                                                </div>
+                                                                                <div class="clear">
+                                                                                </div>
+                                                                                <div class="text-center">
+                                                                                    <span id="MCPH1_SCPH_lblempname"></span></div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="clear">
+                                                                    </div>
+                                                                    <div>
+                                                                        <div id="gridContainer">
+                                                                            <div class="clear text-center">
+                                                                                <h4 class="blue">
+                                                                                    <span id="MCPH1_SCPH_lblFeedBackName2"></span></h4>
+                                                                            </div>
+                                                                            <div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <div class="clear">
+                                                                </div>
+                                                                <div id="MCPH1_SCPH_gvDiscriptive" class="span12">
+                                                                    <div class="sectionHeader">
+                                                                        <span>Descriptive Questions</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div id="MCPH1_SCPH_COPOQuestions" class="span12">
+                                                                    <div class="sectionHeader">
+                                                                        <span>COPO Questions</span>
+                                                                    </div>
+                                                                    <div>
+                                                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HOBEExist" id="HOBEExist" value="0" />
+                                                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HSessionId" id="HSessionId" value="13" />
+                                                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HProgramId" id="HProgramId" value="76" />
+                                                                        <input type="hidden" name="ctl00$ctl00$MCPH1$SCPH$HSemId" id="HSemId" value="337" />
+                                                                        <div>
+
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="clear mb20">
+                                                                </div>
+                                                                <div id="MCPH1_SCPH_gvButton" style="background-color: white;">
+                                                                    <span class="span12 text-center"><span class="span6 text-right">
+                                                            <input type="submit" name="ctl00$ctl00$MCPH1$SCPH$BtnShow" value="Save Feedback" onclick="return Save_validation();" id="MCPH1_SCPH_BtnShow" class="ctrlButtonClose right" style="cursor: hand;
+                                                                position: static" />
+                                                        </span><span class="span6 text-left">
+                                                            <input type="submit" name="ctl00$ctl00$MCPH1$SCPH$btnClose" value="Close" id="MCPH1_SCPH_btnClose" class="ctrlButtonClose" style="margin-left: 20px;" />
+                                                        </span></span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <script type="text/javascript">
+                            document.getElementById('PnlPopupHistory').style.width = "74%";
+
+
+                            function Save_validation() {
+                                flag = true;
+                                var txtCommentDescrip = $("#MCPH1_SCPH_GridDiscriptive textarea[id*=txtCommentDescrip]");
+                                var rdbBAvg = $("#MCPH1_SCPH_GridRating input:radio[id*=rdbBAvg]");
+                                var rdbCOPO = $("#MCPH1_SCPH_GridFacEvalOBE input:radio[id*=rdbBAvg]");
+                                for (var i = 2; i <= rdbBAvg.length + 1; i++) {
+                                    if (i < 10) {
+                                        var string1 = 'ctl00$ctl00$MCPH1$SCPH$GridRating$ctl0';
+                                    } else {
+                                        var string1 = 'ctl00$ctl00$MCPH1$SCPH$GridRating$ctl';
+                                    }
+                                    var string2 = i;
+                                    var string3 = '$g2';
+                                    var res = String.concat(string1, string2, string3);
+                                    var rdbBAvgN = $("input:radio[name=" + res + "]");
+                                    if (rdbBAvgN.is(":checked") == true) {
+                                        flag = true;
+                                    } else {
+                                        flag = false;
+                                        alert("Giving Rating To all Questions is Necessary !!!");
+                                        return false;
+                                    }
+                                }
+                                if (flag == true) {
+                                    $(txtCommentDescrip).each(function() {
+                                        var txt = this.id.toString();
+                                        if ($("#" + txt).val().length <= 0) {
+                                            $("#" + txt).css('border', '1px Solid red');
+                                            flag = false;
+                                        } else {
+                                            $("#" + txt).css('border', '1px Solid grey');
+                                            flag = true;
+                                        }
+                                    });
+                                }
+                                if ($("#HOBEExist").val() == "1") {
+                                    if (flag == true) {
+                                        for (var i = 2; i <= rdbCOPO.length + 1; i++) {
+                                            if (i < 10) {
+                                                var string1 = 'ctl00$ctl00$MCPH1$SCPH$GridFacEvalOBE$ctl0';
+                                            } else {
+                                                var string1 = 'ctl00$ctl00$MCPH1$SCPH$GridFacEvalOBE$ctl';
+                                            }
+                                            var string2 = i;
+                                            var string3 = '$g2';
+                                            var res = String.concat(string1, string2, string3);
+                                            var rdbBAvgN = $("input:radio[name=" + res + "]");
+                                            if (rdbBAvgN.is(":checked") == true) {
+                                                flag = true;
+                                            } else {
+                                                flag = false;
+                                                alert("Giving Rating To all COPO Questions is Necessary !!!");
+                                                return false;
+                                            }
+                                        }
+
+                                    }
+                                }
+                                return flag;
+                            }
+
+                            if ($("#HdnOldFeedback").val() == "1") {
+                                //*****************************
+
+                                var grid = document.getElementById('MCPH1_SCPH_GridRating');
+
+                                var rowCount = grid.rows.length;
+                                //                alert(rowCount);
+                                var msg = "";
+
+                                for (var i = 1; i < rowCount; i++) {
+                                    grid.rows[i].cells[0].innerText = "";
+                                }
+                                //document.getElementById("MCPH1_SCPH_GridRating").insertRow(1).innerHTML = "<TD scope='col'>SNo.</TD><TD scope='col'>Particular</TD><TD align='center' scope='col' style='widTD:80px;'>Below 60%</TD><TD align='center' scope='col' style='widTD:40px;'>Between 60% to 70%</TD><TD align='center' scope='col' style='widTD:60px;'>Between 70% to 80%</TD><TD align='center' scope='col' style='widTD:60px;'>Between 80% to 95%</TD><TD align='center' scope='col' style='widTD:60px;'>Above 95%</TD><TD scope='col'></TD>";
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(1).innerHTML = '<td colspan="9"><b>1.  About the course delivery:</b></td>';
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(2).innerHTML = "<TD scope='col'></TD><TD scope='col'>SNo.</TD><TD scope='col'>Particular</TD><TD align='center' scope='col' style='widTD:80px;'>Not at all</TD><TD align='center' scope='col' style='widTD:40px;'>To a very little Extent </TD><TD align='center' scope='col' style='widTD:60px;'>To a slight Extent</TD><TD align='center' scope='col' style='widTD:60px;'>To a moderate Extent  </TD><TD align='center' scope='col' style='widTD:60px;'>To a great Extent</TD><TD scope='col'></TD>";
+
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(14).innerHTML = '<td colspan="9"><b> </b> </td>';
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(15).innerHTML = "<TD scope='col'></TD><TD scope='col'>SNo.</TD><TD scope='col'>Particular</TD><TD align='center' scope='col' style='widTD:80px;'> Dissatisfied</TD><TD align='center' scope='col' style='widTD:40px;'>Somewhat dissatisfied</TD><TD align='center' scope='col' style='widTD:60px;'>Somewhat satisfied</TD><TD align='center' scope='col' style='widTD:60px;'>Moderately satisfied</TD><TD align='center' scope='col' style='widTD:60px;'>Extremely satisfied </TD><TD scope='col'></TD>";
+
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(18).innerHTML = '<td colspan="9"><b>4. About the course* </b> </td>';
+                                document.getElementById("MCPH1_SCPH_GridRating").insertRow(19).innerHTML = "<TD scope='col'></TD><TD scope='col'>SNo.</TD><TD scope='col'>Particular</TD><TD align='center' scope='col' style='widTD:80px;'>Not applicable</TD><TD align='center' scope='col' style='widTD:40px;'>Inadequate </TD><TD align='center' scope='col' style='widTD:60px;'>Adequate</TD><TD align='center' scope='col' style='widTD:60px;'> </TD><TD align='center' scope='col' style='widTD:60px;'></TD><TD scope='col'></TD>";
+
+                                grid.rows[20].cells[6].innerHTML = "";
+                                grid.rows[20].cells[7].innerHTML = "";
+
+                                grid.rows[21].cells[6].innerHTML = "";
+                                grid.rows[21].cells[7].innerHTML = "";
+
+                                grid.rows[22].cells[6].innerHTML = "";
+                                grid.rows[22].cells[7].innerHTML = "";
+
+                                grid.rows[23].cells[6].innerHTML = "";
+                                grid.rows[23].cells[7].innerHTML = "";
+
+                                grid.rows[24].cells[6].innerHTML = "";
+                                grid.rows[24].cells[7].innerHTML = "";
+
+                                //  document.getElementById("MCPH1_SCPH_GridRating").insertRow(21).innerHTML = '<td colspan="8"><b>About the course* </b> </td>';
+                                //  document.getElementById("MCPH1_SCPH_GridRating").insertRow(22).innerHTML = "<TD scope='col'>SNo.</TD><TD scope='col'>Particular</TD><TD align='center' scope='col' style='widTD:80px;'>Difficult</TD><TD align='center' scope='col' style='widTD:40px;'>Moderate </TD><TD align='center' scope='col' style='widTD:60px;'>Easy</TD><TD align='center' scope='col' style='widTD:60px;'> </TD><TD align='center' scope='col' style='widTD:60px;'></TD><TD scope='col'></TD>";
+
+                                // grid.rows[25].cells[5].innerHTML = "";
+                                //  grid.rows[25].cells[6].innerHTML = "";
+                                //   grid.rows[26].cells[5].innerHTML = "";
+                                //   grid.rows[26].cells[6].innerHTML = "";
+                                //  grid.rows[27].cells[5].innerHTML = "";
+                                //    grid.rows[27].cells[6].innerHTML = "";
+                                //            grid.rows[3].cells[0].innerHTML = "a.";
+                                //            grid.rows[4].cells[0].innerHTML = "b.";
+                                //            grid.rows[5].cells[0].innerHTML = "c.";
+                                //            grid.rows[6].cells[0].innerHTML = "d.";
+                                //            grid.rows[7].cells[0].innerHTML = "e.";
+                                //            grid.rows[8].cells[0].innerHTML = "f.";
+                                //            grid.rows[9].cells[0].innerHTML = "g.";
+                                //            grid.rows[10].cells[0].innerHTML = "h.";
+                                //            grid.rows[11].cells[0].innerHTML = "i.";
+                                //            grid.rows[12].cells[0].innerHTML = "j.";
+                                //            grid.rows[13].cells[0].innerHTML = "k.";
+                                /*
+                                grid.rows[21].cells[0].innerHTML = "2.";
+                                grid.rows[22].cells[0].innerHTML = "3.";
+                                grid.rows[23].cells[0].innerHTML = "4.";
+                                grid.rows[24].cells[0].innerHTML = "5."; */
+                                //**************************        
+                            }
+                        </script>
+
+                    </div>
+
+                    <div class="noprint">
+                        <div id="footer-base">
+                            <div class="container_footer">
+                                <div class="left">
+                                    Copyright © 2019 Global Infoventures @ All rights reserved.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="noprint">
+                        <a title="Back to top" href="#" class=" scrollup back-to-top-fancy" id="back-to-top" style="opacity: 0.7; display: inline; display: none;">Top</a></div>
+                </div>
+    </form>
+
+    <script type="text/javascript">
+    </script>
+
+    <style>
+        .home {
+            margin-top: 20px;
+            margin-right: 20px;
+            font-size: 25px;
+            background: -webkit-linear-gradient(#0070af, #369ba3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</body>
+
+</html>

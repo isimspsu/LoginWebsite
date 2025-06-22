@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head id="Head1">
+    <title>
+        iSIM
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="Page-Enter" content="Alpha(opacity=100)" />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script src="/ISIMSPSU/ResourceHandler.ashx?keys=" type="text/javascript"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" rel="stylesheet" href="Assets/sim.css" />
+    <link type="text/css" rel="stylesheet" href="Assets/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="Assets/menu.css" />
+    <link type="text/css" rel="stylesheet" href="Assets/calender.css" />
+    <link type="text/css" rel="stylesheet" href="Assets/contentslider.css" />
+    <link type="text/css" rel="stylesheet" href="Assets/example_ticker.css" />
+    <style>
+        .blink_me {
+            animation: blinker 1s linear infinite;
+            text-transform: capitalize;
+        }
+
+        @keyframes@keyframes@keyframes@keyframes@keyframesblinker {
+            50% {
+                opacity: 0;
+                color: #ffff00;
+            }
+    </style>
+</head>
+
+<body id="MasterPageBodyTag" data-spy="scroll">
+    <form method="post" action="/ISIMSPSU/Home" id="form1">
+        <div class="aspNetHidden">
+            <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+            <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+            <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUJOTY0NDE4NTg2D2QWAmYPZBYCAgQPZBYCAgEPFgIeBmFjdGlvbgUOL0lTSU1TUFNVL0hvbWUWSmYPZBYCAgEPDxYCHgRUZXh0ZWRkAgsPDxYCHwEFRjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL2Zvci5wbmciIHdpZHRoPSIyMSIgaGVpZ2h0PSI1NyIgLz5kZAIMDw8WAh8BBWc8c3BhbiBjbGFzcz0ibGVmdCI+IDxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL2NvbGxlZ2UtbG9nby5wbmciIGNsYXNzPSJjb2xsZWdlbG9nbyIgLz48L3NwYW4+ZGQCDQ8PFgIfAQUUPGEgaHJlZj0iaG9tZSI+IDwvYT5kZAIODxYCHgdWaXNpYmxlaGQCDw9kFgICAQ8WAh4Dc3JjBW8vSVNJTVNQU1UvU2VydmljZXMvZ2V0SW1hZ2UuYXNoeD9DYXRlZ29yeT1TdHVkZW50Jk1hc3RlcklkPTE3OTgmSW1hZ2VSZWZOYW1lPVBob3RvJklkQ29kZT0maGVpZ2h0PTEyMCZ3aWR0aD0xMDBkAhAPFgIfAmhkAhEPZBYCAgEPFgIfAwVvL0lTSU1TUFNVL1NlcnZpY2VzL2dldEltYWdlLmFzaHg/Q2F0ZWdvcnk9U3R1ZGVudCZNYXN0ZXJJZD0xNzk4JkltYWdlUmVmTmFtZT1QaG90byZJZENvZGU9JmhlaWdodD0xMjAmd2lkdGg9MTAwZAISDw8WAh8BBQ1LcmlzaG5hIEdveWFsZGQCFA8WAh4JaW5uZXJodG1sBUA8aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYWNrZ3JvdW5kLW5ld3MtdXBkYXRlLmpwZyI+ZAIVDw8WAh8BBQ08c3Bhbj48L3NwYW4+ZGQCFg8PFgIfAQUTPHNwYW4+QWxlcnRzPC9zcGFuPmRkAhcPFgIfBAXICDxhIGhyZWY9IlN0dWRlbnQvQWxlcnRzIj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBBdHRlbmRhbmNlIDwvaDQ+ICA8cD5BdHRlbmRhbmNlIGZvciBTdWJqZWN0IERpZ2l0YWwgTG9naWMgRGVzaWduIChTRVU2MjAxKSBpcyBsZXNzIHRoZW4gNzUlPC9wPjwvZGl2PiA8L2Rpdj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBMaXN0IG9mIEhvbGlkYXkgPC9oND4gIDxwPkZvbGxvd2luZyBEYXRlIG9mIEhvbGlkYXkgMTEvMTAvMjAyNCB0byAxMy8xMC8yMDI0IChEdXNzZWhyYSBCcmVhayk8L3A+PC9kaXY+IDwvZGl2PjxkaXYgY2xhc3M9J2NvbnRlbnRkaXYnPiA8ZGl2PiA8c3Bhbj5BbGVydCA8L3NwYW4+ICA8aDQ+IEJpcnRoRGF5IFdpc2hlcyA8L2g0PiAgPHA+RGVhciBzdHVkZW50LCB3aXNoaW5nIHlvdSBhIHZlcnkgaGFwcHkgYmlydGhkYXkuIEFsd2F5cyBrZWVwIHlvdXIgZ29hbHMgaW4gbWluZCwgbGVhcm4gc29tZXRoaW5nIG5ldyBldmVyeWRheSBhbmQgbWFrZSB5b3VyIGxpZmUgYSBncmVhdCBzdWNjZXNzLjwvcD48L2Rpdj4gPC9kaXY+PGRpdiBjbGFzcz0nY29udGVudGRpdic+IDxkaXY+IDxzcGFuPkFsZXJ0IDwvc3Bhbj4gIDxoND4gQmlydGhEYXkgV2lzaGVzIDwvaDQ+ICA8cD5EZWFyIHN0dWRlbnQsIHdpc2hpbmcgeW91IGEgdmVyeSBoYXBweSBiaXJ0aGRheS4gQWx3YXlzIGtlZXAgeW91ciBnb2FscyBpbiBtaW5kLCBsZWFybiBzb21ldGhpbmcgbmV3IGV2ZXJ5ZGF5IGFuZCBtYWtlIHlvdXIgbGlmZSBhIGdyZWF0IHN1Y2Nlc3MuPC9wPjwvZGl2PiA8L2Rpdj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBCaXJ0aERheSBXaXNoZXMgPC9oND4gIDxwPkRlYXIgc3R1ZGVudCwgd2lzaGluZyB5b3UgYSB2ZXJ5IGhhcHB5IGJpcnRoZGF5LiBBbHdheXMga2VlcCB5b3VyIGdvYWxzIGluIG1pbmQsIGxlYXJuIHNvbWV0aGluZyBuZXcgZXZlcnlkYXkgYW5kIG1ha2UgeW91ciBsaWZlIGEgZ3JlYXQgc3VjY2Vzcy48L3A+PC9kaXY+IDwvZGl2PjwvYT5kAhgPDxYCHwEFFzxzcGFuPkF0dGVuZGFuY2U8L3NwYW4+ZGQCGQ8WAh8EBbIBPGEgaHJlZj0iU3R1ZGVudC9Ub2RheUF0dGVuZGVuY2UiIj48ZGl2IGNsYXNzPSdjb250ZW50ZGl2Jz4gPGRpdj4gPHNwYW4+QWxlcnQgPC9zcGFuPiAgPGg0PiBBdHRlbmRhbmNlIDwvaDQ+ICA8cD5Zb3UgaGF2ZSBBdHRlbmRlbnQgVG9kYXkgQ2xhc3NlcyAgMCBPdXQgT2YgMDwvcD48L2Rpdj4gPC9kaXY+PC9hPmQCGg8WAh8EBTI8aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9saWJyYXJ5My5wbmciPmQCGw8PFgIfAQUUPHNwYW4+TGlicmFyeTwvc3Bhbj5kZAIcDxYCHwQFsgQ8ZGl2IGNsYXNzPSJkZXNjcmlwdGlvbl9pdGVtX2NhdGVnb3J5NCBkaXNwX2l0ZW1fY2F0ZWdvcnk0Ij48ZGl2IGlkPSJzbGlkZXI1IiBjbGFzcz0ic2xpZGVyd3JhcHBlciI+PGEgaHJlZj0iTGlicmFyeS9MaWJJc3N1ZVJldHVybiI+PGRpdiBjbGFzcz0nY29udGVudGRpdic+IDxkaXY+IDxzcGFuPkxpYnJhcnkgSW5mbyA8L3NwYW4+ICA8aDQ+IExpYnJhcnkgPC9oND4gIDxwPkNsaWNrIEhlcmUgZm9yIERldGFpbHMuLjwvcD48L2Rpdj4gPC9kaXY+PGRpdiBJZD0icGFnaW5hdGUtc2xpZGVyNSIiIGNsYXNzPSJwYWdpbmF0aW9uMSI+PGEgaHJlZj0iIyIgY2xhc3M9InByZXYiIHN0eWxlPSJtYXJnaW4tbGVmdDogMTBweCI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvbmV3cy1sZWZ0LWFycm93LnBuZyIgY2xhc3M9Im5ld3NfaWNvbiI+PC9hPiA8YSBocmVmPSIjIiBjbGFzcz0ibmV4dCI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvbmV3cy1yaWdodC1hcnJvdy5wbmciIGNsYXNzPSJuZXdzX2ljb24iPjwvYT48L2Rpdj48L2E+PC9kaXY+PC9kaXY+ZAIdDw8WAh8BBRM8c3Bhbj5Ob3RpY2U8L3NwYW4+ZGQCHg8WAh8EBUU8YSAgSHJlZj0iVXRpbGl0aWVzL0NpcmN1bGFyIiBTdHlsZT0iZm9udHNpemU6IDEycHgiID5Ob3RpY2U8L2E+IDxicj5kAh8PFgIfBAX2AjxhIGhyZWY9IiIgb25jbGljaz0iIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIxLnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIyLnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXIzLnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48SU1HIFNSQz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9iYW5uZXI0LnBuZyIgQ0xBU1M9ImN1YmUiIFdJRFRIPSI0MjgiIEhFSUdIVD0iMjEwIj48L2E+ZAIgDxYCHwQFYTxhIGhyZWY9IiIgdGFyZ2V0PSJfYmxhbmsiPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL0ZhY2Vib29rLUxvZ28uanBnIiBib3JkZXI9IjAiPjwvYT5kAiIPFgIfBAWRAzxhIGhyZWY9IiI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvaXRlbV9jYXRlZ29yeTguanBnIj48ZGl2IGNsYXNzPSJoZWFkaW5nX2l0ZW1fY2F0ZWdvcnk4Ij48c3Bhbj48L3NwYW4+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvbGlicmFyeS1pY29uLnBuZyIgc3R5bGU9Ii1tb3otdHJhbnNmb3JtOiBzY2FsZSgxLjApOy13ZWJraXQtdHJhbnNmb3JtOiBzY2FsZSgxLjApOyAtby10cmFuc2Zvcm06IHNjYWxlKDEuMCk7IC1tcy10cmFuc2Zvcm06IHNjYWxlKDEuMCk7dHJhbnNmb3JtOiBzY2FsZSgxLjApOyI+PC9kaXY+PGRpdiBpZD0idGlja2VyMyIgY2xhc3M9ImRlc2NyaXB0aW9uX2l0ZW1fY2F0ZWdvcnk4IGRpc3BfaXRlbV9jYXRlZ29yeTgiPiA8L2Rpdj48L2E+ZAIkDxYCHwQFiwE8YSBocmVmPSJTdHVkZW50L1RpbWVUYWJsZSI+PGRpdiBjbGFzcz0ibWFpbmhlYWRpbmciPlNUVURFTlQgVElNRVRBQkxFPC9kaXY+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvb3JhbmdlLWJhY2tncm91bmQuanBnIj48L2E+ZAImDxYCHwQFmwE8YSBocmVmPSAiVXRpbGl0aWVzL2lDb21wbGFpbnRCb3giID48ZGl2IGNsYXNzPSJtYWluaGVhZGluZyI+IFJFUVVFU1QvIDxici8+IFFVRVJZIEJPWDwvZGl2PjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL3llbGxvdy1iYWNrZ3JvdW5kLmpwZyI+PC9hPmQCKA8WAh8EBRw8c3Bhbj5TdHVkZW50IERldGFpbHM8L3NwYW4+ZAIpDxYCHwQF5gE8cD48c3Bhbj48L3NwYW4+PGEgaHJlZj0iU3R1ZGVudC9Db3Vyc2UiPlBlcnNvbmFsIEluZm9ybWF0aW9uPC9hPjwvcD48cD48YSBocmVmPSJTdHVkZW50L1N0dWRlbnRPZmZpY2lhbCI+PHNwYW4+PC9zcGFuPk9mZmljaWFsIEluZm9ybWF0aW9uPC9hPjwvcD48cD48YSBocmVmPSJTdHVkZW50L1N0dWRlbnRRdWFsaWZpY2F0aW9uIj48c3Bhbj48L3NwYW4+UXVhbGlmaWNhdGlvbiBEZXRhaWw8L2E+PC9wPmQCKg8WAh8EBRM8c3Bhbj5MaW5rcyA8L3NwYW4+ZAItDxYCHwQFvQE8YSBocmVmPSJTdHVkZW50L0ZlZWRCYWNrIj48ZGl2IGNsYXNzPSJpdGVtX2NhdGVnb3J5X3BvbG85Ij48ZGl2IGNsYXNzPSJoZWFkaW5nX2l0ZW1fY2F0ZWdvcnlfcG9sbzkiPjxpbWcgc3JjPSJBcHBfVGhlbWVzL0RlZmF1bHQvaW1hZ2VzL3BvbG9pY29uczkucG5nIiB3aWR0aD0iNzUiPjxwPkZlZWRiYWNrPC9wPjwvZGl2PjwvYT5kAi8PFgIfBAW3ATxkaXYgc3R5bGU9ID4KPGEgaHJlZj0iaHR0cHM6Ly9zcHN1LnNlcnZlcmdpLmNvbTo4MDcxL1NJTVdFQlNQU1UvVXRpbGl0aWVzL29wZW5kYXRhZm9ybSI+PGRpdiBjbGFzcz0iaXRlbV9jYXRlZ29yeV9wb2xvOSI+PGRpdj4gPHA+U3R1ZGVudCBTYXRpc2ZpY2F0aW9uIFN1cnZleTwvcD48L2Rpdj48L2E+PGJlPjwvZGl2PmQCMA8WAh8EBTQ8aW1nIHNyYz0iQXBwX1RoZW1lcy9EZWZhdWx0L2ltYWdlcy9wb2xvaWNvbnM1LnBuZyI+ZAIxDxYCHwQFFDxzcGFuPkxpYnJhcnk8L3NwYW4+ZAIyDxYCHwQFlgI8cD48YSBocmVmPSJMaWJyYXJ5L0xpYklzc3VlUmV0dXJuIj48c3Bhbj48L3NwYW4+TGlicmFyeSBJc3N1ZSBSZXR1cm48L2E+PC9wPjxwPjxhIGhyZWY9ICJodHRwczovL3Nwc3Uuc2VydmVyZ2kuY29tOjgwNzEvT1BBQ1NQU1UvIy9zZWFyY2gvYmFzaWMiICBsPSAiaHR0cDovLzE0LjEzOS4xMjIuNTI6ODM4MC9vcGFjNHgvbXlhY2NvdW50L215UHJvZmlsZS5odG1sIj48c3Bhbj48L3NwYW4+TGlicmFyeSBPUEFDPC9hPjwvcD48cD48YSBocmVmPSIjIj48c3Bhbj48L3NwYW48L2E+PC9wPmQCNA8WAh8EBVE8cD48YSBocmVmPSJBY2FkZW1pY0NhbGFuZGVyMjAyNC0yMDI1LnBkZiI+PHNwYW4+PC9zcGFuPkFjYWRlbWljIGNhbGVuZGFyPC9hPjwvcD5kAjYPFgIfBAVuPGEgaHJlZj0iU3R1ZGVudFxTdHVkZW50VXBkYXRlSW5mbyI+PGRpdiBjbGFzcz0iaXRlbV9jYXRlZ29yeV9wb2xvOSI+PGRpdj4gPHA+VXBkYXRlIEluZm9ybWF0aW9uPC9wPjwvZGl2PjwvYT5kAjgPFgIfBAV3PHA+PGEgaHJlZj0iU3R1ZGVudC9FeGFtUmVzdWx0P3R5cGU9ZXhhbSI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvcG9sb2ljb25zMi5wbmciIGJvcmRlcj0iMCI+UmVzdWx0PC9hPjwvcD5kAjoPFgIfBAVxPHA+PGEgaHJlZj0iU3R1ZGVudC9GZWVJbmZvcm1hdGlvbiI+PGltZyBzcmM9IkFwcF9UaGVtZXMvRGVmYXVsdC9pbWFnZXMvcG9sb2ljb25zMTAucG5nIiBib3JkZXI9IjAiPiBGZWVzPC9hPjwvcD5kZHLKmghxxk+MFKrxM6B6TWxidp11y3KALhra5ND35Y/i"
+            />
+        </div>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var theForm = document.forms['form1'];
+            if (!theForm) {
+                theForm = document.form1;
+            }
+
+            function __doPostBack(eventTarget, eventArgument) {
+                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+                    theForm.__EVENTTARGET.value = eventTarget;
+                    theForm.__EVENTARGUMENT.value = eventArgument;
+                    theForm.submit();
+                }
+            }
+            //]]>
+        </script>
+
+
+        <div class="aspNetHidden">
+
+            <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="DDC640E6" />
+            <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAyQ/NGPrxVmQISPPqiGszkBOhH3aZKIx00BPUKMdFtL1PJewLcQU7yc7Ghu5n3zUtgzBiHxghK8gaX9dlL41ZCmZ+U5Vd4XK6ASk8yu9jM/KWLKVhPCPrKemeBiWS7YEBE2ilewwb/MqwidNgMydZ4pWp4YfXaRFUTFSwNXTdjYcIkjTC7jMkgcBfAhQ4wq0eo8xBZH7gdY3GGlFZ0ZFlSz+X3U+lpMRjG7rsvDyH36/XsQCG9XIwd6f4M3GXFKjhDgHvrf5AfwOmCofqJ23+YKtl0pPaUgILMPJybaCn8wNw=="
+            />
+        </div>
+
+        <center>
+            <span id="MCPH_lblAuthMessage" class="error"></span>
+        </center>
+
+
+
+
+
+
+
+
+        <input type="hidden" id="hdnAppPath" value="/ISIMSPSU/" />
+        <input name="ctl00$hdncollegenewsalerts" type="hidden" id="hdncollegenewsalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>News &lt;/span>  &lt;h4> SPSU &lt;/h4> &lt;p> &lt;img src=&#39;App_Themes/Defaultimages/news1.png&#39; class=&#39;right&#39; hspace=&#39;5&#39; vspace=&#39;5&#39;> SPSU  News&lt;/p>&lt;/div> &lt;/div>"
+        />
+        <input name="ctl00$hdnsystemalerts" type="hidden" id="hdnsystemalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>Attendance for Subject Digital Logic Design (SEU6201) is less then 75%&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> List of Holiday &lt;/h4>  &lt;p>Following Date of Holiday 11/10/2024 to 13/10/2024 (Dussehra Break)&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> BirthDay Wishes &lt;/h4>  &lt;p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> BirthDay Wishes &lt;/h4>  &lt;p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.&lt;/p>&lt;/div> &lt;/div>&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> BirthDay Wishes &lt;/h4>  &lt;p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.&lt;/p>&lt;/div> &lt;/div>"
+        />
+        <input name="ctl00$hdnattendancealerts" type="hidden" id="hdnattendancealerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Alert &lt;/span>  &lt;h4> Attendance &lt;/h4>  &lt;p>You have Attendent Today Classes  0 Out Of 0&lt;/p>&lt;/div> &lt;/div>"
+        />
+        <input name="ctl00$hdnlibraryalerts" type="hidden" id="hdnlibraryalerts" value="&lt;div class=&#39;contentdiv&#39;> &lt;div> &lt;span>Library Info &lt;/span>  &lt;h4> Library &lt;/h4>  &lt;p>Click Here for Details..&lt;/p>&lt;/div> &lt;/div>" />
+        <input name="ctl00$hdnCollege" type="hidden" id="hdnCollege" value="FCI" />
+        <input name="ctl00$hdnticker1" type="hidden" id="hdnticker1" />
+        <input name="ctl00$hdnticker2" type="hidden" id="hdnticker2" />
+        <input name="ctl00$hdnticker3" type="hidden" id="hdnticker3" />
+        <input type="hidden" name="ctl00$hdnForSchoolMaster" id="hdnForSchoolMaster" value="0" />
+        <input name="ctl00$txtCaseCSS" type="text" id="txtCaseCSS" value="textDefault" style="display: none;" />
+
+        <script type="text/javascript" src="Assets/js/jquery.min.js"></script>
+
+        <script type="text/javascript" src="Assets/js/jquery.js"></script>
+
+        <script type="text/javascript" src="Assets/js/contentslider.js"></script>
+
+        <script type="text/javascript" src="Assets/js/TheCore.js?v=14"></script>
+
+        <script type="text/javascript" src="Assets/js/tiles.js?v=14"></script>
+
+        <script type="text/javascript" src="Assets/js/Dashboard.js?v=14"></script>
+
+        <script type="text/javascript" src="Assets/js/coin-slider.min.js"></script>
+
+        <link type="text/css" rel='stylesheet' href="Assets/js/coin-slider-styles.css">
+
+        <script src="Assets/js/jquery.rssfeed.min.js" type="text/javascript"></script>
+
+        <script src="Assets/js/jquery.vticker.js" type="text/javascript"></script>
+
+        <script type='text/javascript' src='Assets/js/jquery.mousewheel.min.js'></script>
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container_top">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                    <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar">
+                    </span>
+                </button>
+                    <div class="brand">
+                        <span class="left">
+                        <img src="images/sim-logo.png" class="logo" />
+                    </span><span class="left"><a href="home">SIM</a><div>
+                        Student Interface</div>
+                    </span><span class="left">
+                        <span id="headerImage"><img src="images/for.png" width="21" height="57" /></span>
+                        </span>
+                        <span id="collegelogo"><span class="left"> <img src="images/college-logo.png" class="collegelogo" /></span></span>
+                        <span class="left" style="display: none;">
+                        <span id="HeaderName"><a href="home"> </a></span>
+                        </span>
+                    </div>
+                </div>
+                <div class="nav-collapse collapse">
+                    <div id="top_navigation_profile">
+                        <ul class="dropdown dropdown-horizontal">
+                            <li>
+                                <a href="#" class="profile">
+                                    <div class="student-image">
+                                        <div style="display: none;">
+
+                                        </div>
+
+                                        <script type="text/javascript">
+                                            var w = 1
+                                            var h = 1
+
+                                            function gettrailobj() {
+                                                if (document.getElementById) return document.getElementById("trailimageid").style
+                                                else if (document.all) return document.all.trailimagid.style
+                                            }
+
+                                            function truebody() {
+                                                return (!window.opera && document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+                                            }
+
+                                            function hidetrail() {
+                                                if (document.getElementById("trailimageid") != null) {
+                                                    document.onmousemove = ""
+                                                    document.getElementById('ttimg').src = 'img/s.gif'
+                                                    gettrailobj().visibility = "hidden"
+                                                    gettrailobj().left = -1000
+                                                    gettrailobj().top = 0
+                                                }
+                                            }
+
+
+                                            function showtrail(width, height, file) {
+
+                                                if (document.getElementById('trailimageid') != null)
+                                                    if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+                                                        w = width
+                                                        h = height
+                                                        gettrailobj().visibility = "visible"
+                                                        gettrailobj().width = w + 7 + "px"
+                                                        gettrailobj().height = h + 7 + "px"
+                                                        document.getElementById('ttimg').src = file
+                                                        document.getElementById('ttimg').style.width = w + "px"
+                                                        document.getElementById('ttimg').style.height = h + "px"
+                                                        document.onmousemove = followmouse
+
+                                                    }
+                                                else {
+                                                    $("#ifrmaeImg").attr("title", "No Preview..!!");
+                                                }
+                                            }
+
+
+                                            function followmouse(e) {
+
+                                                if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+
+                                                    var xcoord = 20
+                                                    var ycoord = 20
+
+                                                    if (typeof e != "undefined") {
+                                                        xcoord += e.pageX
+                                                        ycoord += e.pageY
+                                                    } else if (typeof window.event != "undefined") {
+                                                        xcoord += truebody().scrollLeft + event.clientX
+                                                        ycoord += truebody().scrollTop + event.clientY
+                                                    }
+
+                                                    var docwidth = document.all ? truebody().scrollLeft + truebody().clientWidth : pageXOffset + window.innerWidth - 15
+                                                    var docheight = document.all ? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+                                                    if (xcoord + w + 3 > docwidth)
+                                                        xcoord = xcoord - w - (20 * 2)
+
+                                                    if (ycoord - truebody().scrollTop + h > truebody().clientHeight)
+                                                        ycoord = ycoord - h - 20;
+
+                                                    gettrailobj().left = xcoord + "px"
+                                                    gettrailobj().top = ycoord + "px"
+
+                                                }
+
+                                            }
+                                        </script>
+                                        <div>
+                                            <div class="">
+                                                <img src="getImage.ashx?Category=Student&MasterId=1798&ImageRefName=Photo&IdCode=&height=120&width=100" id="ViewPhoto_ifrmaeImg" style="left: -20; top: -20;" class="image-border" frameborder="0" />
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </a>
+                                <ul>
+                                    <li style="height: 100px !important;">
+                                        <div class="row text-center">
+                                            <div class="student-image1">
+                                                <div style="display: none;">
+
+                                                </div>
+
+                                                <script type="text/javascript">
+                                                    var w = 1
+                                                    var h = 1
+
+                                                    function gettrailobj() {
+                                                        if (document.getElementById) return document.getElementById("trailimageid").style
+                                                        else if (document.all) return document.all.trailimagid.style
+                                                    }
+
+                                                    function truebody() {
+                                                        return (!window.opera && document.compatMode && document.compatMode != "BackCompat") ? document.documentElement : document.body
+                                                    }
+
+                                                    function hidetrail() {
+                                                        if (document.getElementById("trailimageid") != null) {
+                                                            document.onmousemove = ""
+                                                            document.getElementById('ttimg').src = 'img/s.gif'
+                                                            gettrailobj().visibility = "hidden"
+                                                            gettrailobj().left = -1000
+                                                            gettrailobj().top = 0
+                                                        }
+                                                    }
+
+
+                                                    function showtrail(width, height, file) {
+
+                                                        if (document.getElementById('trailimageid') != null)
+                                                            if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+                                                                w = width
+                                                                h = height
+                                                                gettrailobj().visibility = "visible"
+                                                                gettrailobj().width = w + 7 + "px"
+                                                                gettrailobj().height = h + 7 + "px"
+                                                                document.getElementById('ttimg').src = file
+                                                                document.getElementById('ttimg').style.width = w + "px"
+                                                                document.getElementById('ttimg').style.height = h + "px"
+                                                                document.onmousemove = followmouse
+
+                                                            }
+                                                        else {
+                                                            $("#ifrmaeImg").attr("title", "No Preview..!!");
+                                                        }
+                                                    }
+
+
+                                                    function followmouse(e) {
+
+                                                        if (navigator.userAgent.toLowerCase().indexOf('opera') == -1 && navigator.userAgent.toLowerCase().indexOf('safari') == -1) {
+
+                                                            var xcoord = 20
+                                                            var ycoord = 20
+
+                                                            if (typeof e != "undefined") {
+                                                                xcoord += e.pageX
+                                                                ycoord += e.pageY
+                                                            } else if (typeof window.event != "undefined") {
+                                                                xcoord += truebody().scrollLeft + event.clientX
+                                                                ycoord += truebody().scrollTop + event.clientY
+                                                            }
+
+                                                            var docwidth = document.all ? truebody().scrollLeft + truebody().clientWidth : pageXOffset + window.innerWidth - 15
+                                                            var docheight = document.all ? Math.max(truebody().scrollHeight, truebody().clientHeight) : Math.max(document.body.offsetHeight, window.innerHeight)
+
+                                                            if (xcoord + w + 3 > docwidth)
+                                                                xcoord = xcoord - w - (20 * 2)
+
+                                                            if (ycoord - truebody().scrollTop + h > truebody().clientHeight)
+                                                                ycoord = ycoord - h - 20;
+
+                                                            gettrailobj().left = xcoord + "px"
+                                                            gettrailobj().top = ycoord + "px"
+
+                                                        }
+
+                                                    }
+                                                </script>
+                                                <div>
+                                                    <div class="">
+                                                        <img src="getImage.ashx?Category=Student&MasterId=1798&ImageRefName=Photo&IdCode=&height=120&width=100" id="ViewPhoto1_ifrmaeImg" style="left: -20; top: -20;" class="image-border" frameborder="0" />
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div style="clear: both;">
+                                            </div>
+                                            <div class="text">
+                                                <span style="color: yellow; text-align: center;">HELLO,</span>
+                                                <span id="lblStdName">Krishna Goyal</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li><a href="Student/Course">Profile </a></li>
+                                    <li><a href="Student/Alerts">Alerts</a></li>
+                                    <li><a href="Utilities/ChangePassword">Change Password</a></li>
+                                    <li>
+                                        <a id="btnLogOut" href="javascript:__doPostBack(&#39;ctl00$btnLogOut&#39;,&#39;&#39;)">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="full_page_container">
+            <ul id="full_page">
+                <li id="img_container1" class="img_block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="span6">
+                                <div class="item_category1">
+                                    <div id="Tile1_BackgroundImage"><img src="images/background-news-update.jpg"></div>
+                                    <div class="heading_category1">
+                                        <span id="Tile1_Header"><span></span></span>
+                                        <img src="images/library-icon.png">
+                                    </div>
+                                    <div class="description_item_category1 disp_item_category1">
+                                        <div id="slider2" class="sliderwrapper">
+                                            <div class='contentdiv'>
+                                                <div> <span>News </span>
+                                                    <h4> SPSU </h4>
+                                                    <p> <img src='images/news1.png' class='right' hspace='5' vspace='5'> SPSU News</p>
+                                                </div>
+                                            </div>
+                                            <div id="paginate-slider2" class="pagination1">
+                                                <a href="#" class="prev" style="margin-left: 10px">
+                                                <img src="images/news-left-arrow.png" class="news_icon">
+                                            </a><a href="#" class="next">
+                                                <img src="images/news-right-arrow.png" class="news_icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#"></a>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <div class="item_twitter">
+                                    <img src="images/Sunny.png">
+                                    <div class="heading_category">
+                                        <span id="Tile2_Header"><span>Alerts</span></span><img src="images/library-icon.png"></div>
+                                    <div class="description_twitter disp_twitter">
+                                        <div id="slider3" class="sliderwrapper">
+                                            <div id="Tile2_Hyperlink">
+                                                <a href="Student/Alerts">
+                                                    <div class='contentdiv'>
+                                                        <div> <span>Alert </span>
+                                                            <h4> Attendance </h4>
+                                                            <p>Attendance for Subject Digital Logic Design (SEU6201) is less then 75%</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class='contentdiv'>
+                                                        <div> <span>Alert </span>
+                                                            <h4> List of Holiday </h4>
+                                                            <p>Following Date of Holiday 11/10/2024 to 13/10/2024 (Dussehra Break)</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class='contentdiv'>
+                                                        <div> <span>Alert </span>
+                                                            <h4> BirthDay Wishes </h4>
+                                                            <p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class='contentdiv'>
+                                                        <div> <span>Alert </span>
+                                                            <h4> BirthDay Wishes </h4>
+                                                            <p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class='contentdiv'>
+                                                        <div> <span>Alert </span>
+                                                            <h4> BirthDay Wishes </h4>
+                                                            <p>Dear student, wishing you a very happy birthday. Always keep your goals in mind, learn something new everyday and make your life a great success.</p>
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div id="paginate-slider3" class="pagination1">
+                                                <a href="#" class="prev paginate-slider2" style="margin-left: 10px">
+                                                <img src="images/news-left-arrow.png" class="news_icon"></a>
+                                                <a href="#" class="next">
+                                                <img src="images/news-right-arrow.png" class="news_icon"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="span3">
+                                <a href="Student/TodayAttendence">
+                                    <div class="item_category4">
+                                        <img src="images/item_category4.png">
+                                        <div class="heading_item_category4">
+                                            <span id="Tile3_Header"><span>Attendance</span></span>
+                                            <img src="images/library-icon.png" style="-moz-transform: scale(1.0);
+                                            -webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0);
+                                            transform: scale(1.0);">
+                                        </div>
+                                        <div class="description_item_category4 disp_item_category4">
+                                            <div id="slider4" class="sliderwrapper">
+                                                <div id="tile3_Hyperlink"><a href="Student/TodayAttendence" "><div class='contentdiv'> <div> <span>Alert </span>  <h4> Attendance </h4>  <p>You have Attendent Today Classes  0 Out Of 0</p></div> </div></a></div>
+                                            <div id="paginate-slider4 " class="pagination1 ">
+                                                <a href="# " class="prev " style="margin-left: 10px ">
+                                                    <img src="images/news-left-arrow.png " class="news_icon "></a>
+                                                <a href="# " class="next ">
+                                                    <img src="images/news-right-arrow.png " class="news_icon "></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row ">
+                        <div class="span3 ">
+                            <div class="item_category4 " style="background-color: #0079AE; height: 209px; ">
+                                <div id="Tile4_Image "><img src="images/library3.png "></div>
+                                <div class="heading_item_category4 " style="width: 135px !important; ">
+                                    <span id="Tile4_Header "><span>Library</span></span>
+                                    <img src="images/library-icon.png " style="-moz-transform: scale(1.0); -webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0); transform: scale(1.0); "></div>
+                                <div id="Tile4_Hyperlink "><div class="description_item_category4 disp_item_category4 "><div id="slider5 " class="sliderwrapper "><a href="Library/LibIssueReturn
+                                                        "><div class='contentdiv'> <div> <span>Library Info </span>  <h4> Library </h4>  <p>Click Here for Details..</p></div> </div><div Id="paginate-slider5 "" class="pagination1"><a href="#" class="prev" style="margin-left: 10px"><img src="images/news-left-arrow.png" class="news_icon"></a> <a href="#" class="next"><img src="images/news-right-arrow.png" class="news_icon"></a></div>
+                                </a>
+                                </div>
+                                </div>
+                                </div>
+                                <a href="#"></a>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="item_category5">
+                                <div class="heading_item_category5">
+                                    <span id="Tile5_Header"><span>Notice</span></span>
+                                    <img src="images/library-icon.png"></div>
+                                <div class="mainheading">
+                                    <div id="Tile5_Hyperlink"><a Href="Utilities/Circular" Style="fontsize: 12px">Notice</a> <br></div>
+                                </div>
+                                <img src="images/viewstore.jpg">
+                            </div>
+                        </div>
+                        <div class="span6">
+                            <div id="games" old="https://plus.google.com/photos/116874396328901424003/albums/6044390862548797761">
+                                <div id="Tile6_Hyperlink">
+                                    <a href="" onclick="">
+                                        <IMG SRC="images/banner1.png" CLASS="cube" WIDTH="428" HEIGHT="210">
+                                        <IMG SRC="images/banner2.png" CLASS="cube" WIDTH="428" HEIGHT="210">
+                                        <IMG SRC="images/banner3.png" CLASS="cube" WIDTH="428" HEIGHT="210">
+                                        <IMG SRC="images/banner4.png" CLASS="cube" WIDTH="428" HEIGHT="210">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="span3 ">
+                            <div class="item_category3">
+                                <div id="Tile7_Header"><a href="" target="_blank"><img src="images/Facebook-Logo.jpg" border="0"></a></div>
+                                <div id="Tile7_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3">
+                            <div class="item_category8">
+                                <div id="Tile8_Header"><a href=""><img src="images/item_category8.jpg"><div class="heading_item_category8"><span></span><img src="images/library-icon.png" style="-moz-transform: scale(1.0);-webkit-transform: scale(1.0); -o-transform: scale(1.0); -ms-transform: scale(1.0);transform: scale(1.0);"></div><div id="ticker3" class="description_item_category8 disp_item_category8"> </div></a></div>
+                                <div id="Tile8_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3 ">
+                            <div class="item_category3">
+                                <div id="Tile9_Hearder">
+                                    <a href="Student/TimeTable">
+                                        <div class="mainheading">STUDENT TIMETABLE</div><img src="images/orange-background.jpg"></a>
+                                </div>
+                                <div id="Tile9_Hyperlink"></div>
+                            </div>
+                        </div>
+                        <div class="span3 ">
+                            <div class="item_category10">
+                                <div id="Tile10_Hearder">
+                                    <a href="Utilities/iComplaintBox">
+                                        <div class="mainheading"> REQUEST/ <br/> QUERY BOX</div><img src="images/yellow-background.jpg"></a>
+                                </div>
+                                <div id="Tile10_Hyperlink"></div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+        </li>
+        <li id="img_container2" style="display: none" class="img_block">
+            <div class="container">
+                <div class="calender" style="position: relative;">
+                    <div class=" noshow1">
+                    </div>
+                    <div class="top-icons">
+                        <span class="left">
+                                <img src="images/icon-main.png">
+                            </span><span class="right">
+                                <img src="images/circle-plus.png">
+                                <img src="images/circle-plus.png">
+                                <img src="images/circle-plus.png">
+                                <img src="images/circle-plus.png"></span>
+                    </div>
+                    <div class="clear">
+                    </div>
+                    <div class="main">
+                        <span class="arrow-left">
+                                <img src="images/calender-arrow-left.png"></span>
+                        <h1>
+                            Nov-2014</h1>
+                        <span class="arrow-right">
+                                <img src="images/calender-arrow-right.png"></span>
+                    </div>
+                    <div class="day">
+                        <ul>
+                            <li class="first">Mo</li>
+                            <li>Tu</li>
+                            <li>We</li>
+                            <li>Th</li>
+                            <li>Fr</li>
+                            <li>Sa</li>
+                            <li>Su</li>
+                        </ul>
+                    </div>
+                    <div class="dates">
+                        <ul>
+                            <li class="oldday">30</li>
+                            <li class="oldday">01</li>
+                            <li class="event3">02</li>
+                            <li class="event4">03</li>
+                            <li class="notes">04</li>
+                            <li>05</li>
+                            <li>06</li>
+                            <li>07</li>
+                            <li>08</li>
+                            <li>09</li>
+                            <li>10</li>
+                            <li>11</li>
+                            <li>12</li>
+                            <li>13</li>
+                            <li>14</li>
+                            <li>15</li>
+                            <li>16</li>
+                            <li>17</li>
+                            <li>18</li>
+                            <li>19</li>
+                            <li>20</li>
+                            <li>21</li>
+                            <li>22</li>
+                            <li>23</li>
+                            <li>24</li>
+                            <li>25</li>
+                            <li>26</li>
+                            <li>27</li>
+                            <li>28 </li>
+                            <li>29</li>
+                            <li>30</li>
+                            <li>31</li>
+                            <li class="oldday">01</li>
+                            <li class="oldday">02</li>
+                            <li class="oldday">03</li>
+                        </ul>
+                    </div>
+                    <div class="border-bottom">
+                    </div>
+                    <div class="eventcalender">
+                        <ul>
+                            <li><span class="time">09.00</span><span class="am"> AM</span></li>
+                            <li><span>Seminar...</span></li>
+                            <li><span class="greycircle"></span></li>
+                        </ul>
+                    </div>
+                    <div class="border-bottom">
+                    </div>
+                    <div class="eventcalender odd">
+                        <ul>
+                            <li><span class="time">03.30</span><span class="am"> PM</span></span>
+                            </li>
+                            <li><span>Computer Lab session </span></li>
+                            <li><span class="redcircle"></span></li>
+                        </ul>
+                    </div>
+                    <div class="border-bottom">
+                    </div>
+                    <div class="eventcalender">
+                        <ul>
+                            <li><span class="time">04.00</span><span class="am"> PM</span></span>
+                            </li>
+                            <li><span>Sports activity</span></li>
+                            <li><span class="greencircle"></span></li>
+                        </ul>
+                    </div>
+                    <div class="border-bottom">
+                    </div>
+                    <div class="eventcalender odd">
+                        <ul>
+                            <li><span class="time">05.00</span><span class="am"> PM</span></span>
+                            </li>
+                            <li><span>Leaving party!!</span></li>
+                            <li><span class="greycircle"></span></li>
+                        </ul>
+                        <div class="border-bottom">
+                        </div>
+                    </div>
+                    <div class="white">
+                    </div>
+                    <div class="toggle_calender">
+                        <ul>
+                            <li>List</li>
+                            <li class="active">Day</li>
+                            <li>Month</li>
+                            <li class="last">Year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li id="img_container3" class="img_block">
+            <div class="container_polo">
+                <div class="row_polo">
+                    <div class="polo_span1">
+                        <div class="item_category_polo1">
+                            <div class="heading_item_category_polo1">
+                                <img src="images/poloicons1.png"></div>
+                            <div class="description_item_category_polo1 disp_item_category_polo1">
+                                <div id="Tile11_Hearder"><span>Student Details</span></div>
+                                <div id="Tile11_Hyperlink">
+                                    <p><span></span><a href="Student/Course">Personal Information</a></p>
+                                    <p><a href="Student/StudentOfficial"><span></span>Official Information</a></p>
+                                    <p><a href="Student/StudentQualification"><span></span>Qualification Detail</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="polo_span2">
+                        <div class="item_category_polo2">
+                            <div class="heading_item_category_polo2">
+                                Assignment,Course Plan & Question Bank
+                            </div>
+                            <div class="description_item_category_polo2 disp_item_category_polo2">
+                                <div id="Tile12_Hearder"><span>Links </span></div>
+                                <div id="Tile12_Hyperlink"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="polo_span9">
+                        <div id="Tile13_Hearder"></div>
+                        <div id="Tile13_Hyperlink">
+                            <a href="../Feedback/FeedBack.html">
+                                <div class="item_category_polo9">
+                                    <div class="heading_item_category_polo9"><img src="images/poloicons9.png" width="75">
+                                        <p>Feedback</p>
+                                    </div>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="polo_span4">
+                        <div class="item_category_polo4">
+                            <div class="heading_item_category_polo4">
+                                <p>
+                                    <div id="Tile14_Hearder"></div>
+                                    <div id="Tile14_Hyperlink">
+                                        <div style=>
+                                            <a href="https://spsu.servergi.com:8071/SIMWEBSPSU/Utilities/opendataform">
+                                                <div class="item_category_polo9">
+                                                    <div>
+                                                        <p>Student Satisfication Survey</p>
+                                                    </div>
+                                            </a>
+                                            <be>
+                                                </div>
+                                        </div>
+                                </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_polo">
+                    <div class="polo_span5">
+                        <div class="item_category_polo5">
+                            <div class="heading_item_category_polo5">
+                                <div id="Tile15_Background"><img src="images/poloicons5.png"></div>
+                            </div>
+                            <div class="description_item_category_polo5 disp_item_category_polo5">
+                                <div id="Tile15_Hearder"><span>Library</span></div>
+                                <div id="Tile15_Hyperlink">
+                                    <p><a href="Library/LibIssueReturn"><span></span>Library Issue Return</a></p>
+                                    <p><a href="https://spsu.servergi.com:8071/OPACSPSU/#/search/basic" l="http://14.139.122.52:8380/opac4x/myaccount/myProfile.html"><span></span>Library OPAC</a></p>
+                                    <p><a href="#"><span></span</a></p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="polo_span5">
+                        <div class="item_category_polo5">
+                            <div class="heading_item_category_polo5" style="background-color:#00b1bc">
+                                <span style="text-align: center !important;margin-top: 0px!important;padding:56px 81px!important;margin: 0px auto!important;position: absolute !important;">More Links... </span>
+                            </div>
+                            <div class="description_item_category_polo5 disp_item_category_polo5">
+                                <div>
+                                    <span>   More Links </span>
+                                </div>
+                                <p>
+                                    <a href="Student/Student Bank Account Detail"><span></span>Bank Account Detail</a>
+                                </p>
+                                <p>
+                                    <a href="Utilities/Grievance"><span></span>Grievance </a>
+                                </p>
+                                <p>
+                                    <a href="Student/HostelLeave"><span></span>Hostel Leave </a>
+                                </p>
+
+                                <p>
+                                    <a href="Student/TNPStudentRegistration"><span></span>T&P  Registration </a>
+                                </p>
+                            </div> <a href="#"></a></div>
+
+
+                        https://spsu.servergi.com:8071/ISIMSPSU/
+                    </div>
+                    <div class="polo_span7">
+                        <div class="item_category_polo7">
+                            <div class="heading_item_category_polo7">
+                                <img src="images/poloicons7.png">
+                                <div id="Tile16_Hearder"></div>
+                                <div id="Tile16_Hyperlink">
+                                    <p><a href="AcademicCalander2024-2025.pdf"><span></span>Academic calendar</a></p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="polo_span8">
+                        <div class="item_category_polo8">
+                            <div class="heading_item_category_polo8">
+                                <div id="Tile17_Hearder"></div>
+                                <div id="Tile17_Hyperlink">
+                                    <a href="Student\StudentUpdateInfo">
+                                        <div class="item_category_polo9">
+                                            <div>
+                                                <p>Update Information</p>
+                                            </div>
+                                    </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row_polo">
+                    <div class="polo_span3">
+                        <div class="item_category_polo3">
+                            <div class="heading_item_category_polo3">
+                                <div id="Tile18_Hearder"></div>
+                                <div id="Tile18_Hyperlink">
+                                    <p><a href="../ISIMSPSU/Student/ExamResult.html"><img src="images/poloicons2.png" border="0">Result</a></p>
+
+
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="polo_span10">
+                        <div class="item_category_polo10">
+                            <div class="heading_item_category_polo10">
+                                <div id="Tile19_Hearder"></div>
+                                <div id="Tile19_Hyperlink">
+                                    <p><a href="Student/FeeInformation"><img src="images/poloicons10.png" border="0"> Fees</a></p>
+                                </div>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="polo_span2">
+                        <div class="item_category_polo2">
+                            <div class="heading_item_category_polo2">
+                                <a href=""><span></span>Exam Links.. </a>
+                            </div>
+                            <div class="description_item_category_polo2 disp_item_category_polo2">
+                                <div>
+                                    <span>Exam Links/Exam Registraion </span>
+                                </div>
+
+
+                                <p>
+
+                                    <a href="Student/StudentExamRegistration?type=Regular&ENDTerm=1"><span></span>Exam Registration (END Term)</a>
+
+
+                                </p>
+
+                                <p>
+
+                                    <a href="Student/StudentExamRegistration?type=Reappear"><span></span>Reappear</a>
+
+
+                                </p>
+
+                                <p>
+
+                                    <a href="Student/StudentExamRegistration?type=Revaluation"><span></span>Revaluation</a>
+
+
+                                </p>
+
+                                <p>
+
+                                    <a href="Student/StudentExamRegistration?type=Regular&MIDTerm=1"><span></span>Exam Registration(MID Term)</a>
+
+
+                                </p>
+
+                                <p>
+                                    <a href="Student/ExamDateSheet"><span></span>Date Sheet </a>
+                                </p>
+                            </div>
+                            <a href="#"></a>
+                        </div>
+                    </div>
+                    <div class="polo_span12">
+                        <div class="item_category_polo12">
+                            <div class="heading_item_category_polo12">
+
+
+                            </div>
+                            <div class="description_item_category_polo12 disp_item_category_polo12">
+                                <br />
+
+                                <span><a href=""> </a></span> <br />
+
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </li>
+        </ul>
+        </div>
+    </form>
+
+    <script type="text/javascript">
+        // <span><a href="Student/StudentExamRegistration?type=Reappear">Reappear</a></span> <br />
+        //                                <span><a href="Student/StudentExamRegistration?type=Repeat">Repeat</a></span> <br />
+        //                               <span><a href="Student/StudentExamRegistration?type=Improvement">Improvement</a></span> <br />
+        $(document).ready(function() {
+
+            $('html, body, *').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta * 40);
+                e.preventDefault();
+            });
+
+
+            $('#games').coinslider({
+                hoverPause: false
+            });
+
+            $('#ticker1').rssfeed('http://feeds.reuters.com/reuters/oddlyEnoughNews', {}, function(e) {
+                $(e).find('div.rssBody').vTicker();
+            });
+
+            $('#ticker2').rssfeed('https://www.facebook.com/feeds/notifications.php?id=229022860490339&viewer=547527233&key=AWiyuEiotmaMXgDt&format=rss20', {}, function(e) {
+                $(e).find('div.rssBody').vTicker({
+                    showItems: 2
+                });
+            });
+
+            $('#ticker3').rssfeed('http://jobsearch.naukri.com/mynaukri/mn_newsmartsearch.php?xz=1_0_15&xo=2727&xl=rss&rss=r&type=all&qf[]=catid_22', {}, function(e) {
+                $(e).find('div.rssBody').vTicker({
+                    showItems: 1
+                });
+            });
+        });
+
+        $(function() {
+            var diff = 0;
+            var id_current = $('.img_button').attr('id');
+            $('.img_button').click(function() {
+                var id_click = $(this).attr('id');
+                if (id_click > id_current) {
+                    var diff = id_click - id_current;
+                    var move = 971 * diff;
+                    var thisthis = $('#full_page');
+                    thisthis.animate({
+                        "left": "-=" + move + "px"
+                    }, 1500);
+
+                    $('#' + id_click).css('opacity', 1);
+                    $('#' + id_current).css('opacity', .5);
+
+                } else {
+                    var diff = id_current - id_click;
+                    var move = 971 * diff;
+                    var thisthis = $('#full_page');
+                    thisthis.animate({
+                        "left": "+=" + move + "px"
+                    }, 1500);
+                    $('#' + id_click).css('opacity', 1);
+                    $('#' + id_current).css('opacity', .5);
+                }
+                id_current = id_click;
+
+            });
+        });
+
+        featuredcontentslider.init({
+            id: "slider2",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {}
+        })
+
+        featuredcontentslider.init({
+            id: "slider3",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {}
+        })
+
+        featuredcontentslider.init({
+            id: "slider4",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {}
+        })
+
+
+        featuredcontentslider.init({
+            id: "slider5",
+            contentsource: ["inline", ""],
+            toc: "markup",
+            nextprev: ["Previous", "Next"],
+            revealtype: "click",
+            enablefade: [true, 0.2],
+            autorotate: [true, 3000],
+            onChange: function(previndex, curindex, contentdivs) {}
+        })
+    </script>
+
+    <style>
+        .student-image .image-border {
+            max-width: 60px !important;
+            border-radius: 50%;
+            width: 40px !important;
+            height: 40px !important;
+        }
+
+        .student-image1 {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        .student-image1 .image-border {
+            max-width: 80px !important;
+            border-radius: 50%;
+            width: 80px !important;
+            height: 80px !important;
+        }
+
+        .text {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .left {
+            float: left;
+        }
+    </style>
+</body>
+
+</html>

@@ -1,0 +1,317 @@
+@font-face {
+    font-family: 'aliquamultralight';
+    src: url('aliquam-webfont.eot');
+    src: url('aliquam-webfont.eot?#iefix') format('embedded-opentype'), url('aliquam-webfont.woff') format('woff'), url('aliquam-webfont.ttf') format('truetype'), url('aliquam-webfont.svg#aliquamultralight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.calender {
+    font-family: 'aliquamultralight';
+    background: #ffffff;
+    width: 331px;
+    margin: 0 auto;
+    font-weight: 300;
+    height: 540px;
+    -webkit-font-smoothing: antialiased;
+    margin-top: 5px;
+}
+
+.calender ul {
+    margin: 0;
+    padding: 0;
+}
+
+.calender ul li.day {
+    font-size: 13px;
+    height: 25px;
+    text-align: center;
+    background: #F8F8F8;
+}
+
+.calender ul li .day_name {
+    display: none;
+}
+
+.calender ul li .event {
+    display: block;
+    text-indent: -4000px;
+}
+
+.calender ul li:hover .event {
+    text-indent: 0;
+    position: absolute;
+    top: 45px;
+    left: 0;
+    font-size: 13px;
+    dispay: block;
+    color: red;
+    padding: 10px;
+}
+
+.calender .day {
+    clear: both;
+    font-family: 'aliquamultralight';
+    display: block;
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 25px;
+    margin: 0 auto;
+}
+
+.calender .main {
+    background-color: #F8F8F8;
+    width: 331px;
+    border-top: 2px solid #E2E3E3;
+    padding-bottom: 4px;
+    margin: 0 auto;
+    clear: both;
+    height: 26px;
+}
+
+.calender .main span {
+    float: left;
+    /*padding:5px;*/
+}
+
+.calender h1 {
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    font-size: 17.5px;
+    font-weight: 400;
+    letter-spacing: 1.6px;
+    word-spacing: 8px;
+    line-height: 21px;
+    padding: 8px 48px 0 50px;
+    width: 151px;
+    letter-spacing: 2px;
+}
+
+.arrow-left {
+    margin-left: 25px;
+    margin-top: 7px;
+}
+
+.arrow-right {
+    margin-top: 7px;
+}
+
+.calender .dates .oldday {
+    color: #d4d9dd;
+}
+
+.calender li.event1 {
+    display: block;
+    text-align: center;
+    background: url("../../../App_Themes/Default/images/circle-date.png");
+}
+
+.calender .border-bottom {
+    background: url(../../../App_Themes/Default/images/border-bottom.png);
+    height: 2px;
+    clear: both;
+}
+
+.calender .eventcalender {
+    height: 47px;
+    background-color: #ffffff;
+}
+
+.calender .eventcalender ul li {
+    font-weight: 400;
+    float: left;
+    text-align: center;
+    color: #2E343B;
+    font-size: 12px;
+    padding: 13px 0px !important;
+    margin-left: 10px !important;
+}
+
+.calender .eventcalender {
+    padding-left: 15px;
+}
+
+.calender .eventcalender span {
+    font-size: 14px;
+    font-weight: 600;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+
+.calender .eventcalender .time {
+    font-size: 13px;
+    top: 2px;
+    font-weight: 400;
+    position: relative;
+}
+
+.calender .eventcalender .am {
+    font-size: 10px;
+    top: 2px;
+    font-weight: 400;
+    position: relative;
+}
+
+.calender .greycircle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #6C747D;
+    border-radius: 10px;
+    right: 35px;
+    top: 18px;
+}
+
+.calender .redcircle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 10px;
+    right: 35px;
+    top: 18px;
+}
+
+.calender .greencircle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #4CD964;
+    border-radius: 10px;
+    right: 35px;
+    top: 18px;
+}
+
+.calender .odd {
+    background: url(../../../App_Themes/Default/images/background-events.png);
+    display: block;
+    background-position: center;
+}
+
+.calender .dates {
+    clear: both;
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 11px;
+    margin-left: 11px;
+}
+
+.calender .dates ul,
+.day ul,
+.eventcalender ul {
+    position: relative;
+    width: 100%;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.calender .day ul li.first {
+    margin-left: 0px;
+}
+
+.calender .day ul li {
+    float: left;
+    text-align: center;
+    padding: 5px 0px 5px 28px !important;
+    font-size: 10.5px !important;
+    color: #2e343b;
+    letter-spacing: 2px;
+}
+
+.calender .dates ul li {
+    float: left;
+    text-align: center;
+    font-size: 14.5px;
+    padding: 14px 5px 5px 17px !important;
+    background-color: #ffffff;
+    color: #8d99a6;
+    letter-spacing: 2px;
+    width: 20px;
+}
+
+.calender .dates ul li:nth-child(7n+1) {
+    clear: both;
+}
+
+.calender .event3 {
+    background: url(../../../App_Themes/Default/images/circle-date.png);
+    background-repeat: no-repeat;
+    background-position: 10px 9px;
+}
+
+.calender .event4 {
+    background: url(../../../App_Themes/Default/images/circle-date-fill.png);
+    background-repeat: no-repeat;
+    background-position: 10px 9px;
+    color: #ffffff !important;
+}
+
+.calender .notes {
+    background: url(../../../App_Themes/Default/images/blue-dot.png);
+    background-repeat: no-repeat;
+    background-position: 23px bottom;
+}
+
+.calender .show_hide1 {
+    padding-left: 8px;
+}
+
+.calender.show_hide {
+    line-height: 30px !important;
+    padding-left: 8px;
+}
+
+.toggle_calender {
+    font-family: "MYRIADPROREGULAR";
+    font-size: 16px;
+    color: #6c747d;
+    clear: both;
+    margin-top: 5px;
+}
+
+.toggle_calender ul {
+    margin: 0 auto !important;
+    padding: 0px;
+    border-radius: 4px;
+    border: 1px solid #6c747d;
+    display: block;
+    width: 90%;
+    height: 29px;
+    vertical-align: text-middle;
+}
+
+.toggle_calender ul li {
+    float: left;
+    width: 23.8%;
+    text-align: center;
+    height: 25px;
+    border-right: 1px solid #898E91;
+    padding-top: 4px !important;
+}
+
+.toggle_calender ul li: hover {
+    float: left;
+    width: 24.8%;
+    text-align: center;
+    height: 27px;
+    border-right: 1px solid #898E91;
+    padding-top: 8px;
+}
+
+.toggle_calender ul li.active {
+    background-color: #898e91;
+    color: #ffffff;
+}
+
+.toggle_calender ul li.last {
+    border-right: none !important;
+}
