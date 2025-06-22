@@ -1,0 +1,90 @@
+﻿function Bind() {
+    $("#Main2").hide();
+    $("#divPReport").hide();
+    $("#divTotalReport").hide();
+    $("#divFormulaforReport").hide();
+    var strFormJson = "[ { ";
+    var Enroll = $("#hdnEnroll").val();
+    var Sem = $("#hdnSem").val();
+    var Exam = $("#hdnExam").val();
+    strFormJson = strFormJson + "\"Enroll\" : \"" + Enroll + "\",\"Sem\" : \"" + Sem + "\" ,\"Exam\" : \"" + Exam + "\" ";
+    strFormJson += "} ]";
+    var Params = " 'param' : '" + strFormJson + "'";
+    if (strFormJson == "")
+        Params = "";
+    //  CallAjax("", "Services/WSDataServices.asmx", "GetShowDataExamResult", Params, GetResults, true);
+    CallAjax("", "Services/WSDataServices.asmx", "GetShowDataExamResultForHTMLTemplate", Params, GetResults, true);
+
+    
+    return false;
+}
+function GetResults(result) {
+    var key = result.d.split('σ');    
+   //alert((key[4]));
+    $("#divDownload").html(key[4]);
+    $("#divDownload").show();
+    $("#divFormulaforReport").hide();
+
+    if (result.d != "σσ") {       
+        $("#Main2").hide();
+        $("#divFoter").show(); 
+        if (key[0] != null) {
+            $("#divPReport").html(key[0]);
+            $("#divPReport").show();           
+        }
+        else {
+            $("#divPReport").hide();
+        }
+        if (key[1] != null) {
+            $("#divFormulaforReport").html(key[1]);
+            $("#divFormulaforReport").show();
+        }
+        else {
+            $("#divFormulaforReport").hide();
+       }
+        if (key[2] != null) {
+            $("#divTotalReport").html(key[2]);
+            $("#divTotalReport").show();
+        }
+        else {
+            $("#divTotalReport").hide();
+        }
+        if (key[3] != null) {
+            $("#divDateDeclare").html(key[3]);
+            $("#divDateDeclare").show();
+        }
+        else {
+            $("#divDateDeclare").hide();
+        }
+        if (key[4] != null) {
+            $("#divDownload").html(key[4]);
+            $("#divDownload").show();
+        }
+        else {
+            $("#divDownload").hide();
+        }
+        if (key[5] != null) {
+            $("#lblStatement").html(key[5]);
+        }
+
+        if (key[6] != null) {
+            $("#divPre").html(key[6]);
+            $("#divPre").show();
+        }
+        else {
+            $("#divPre").hide();
+        }
+
+
+        $("#divFormulaforReport").hide();
+    }
+    else {
+        $("#Main2").show();
+        $("#divPReport").hide();
+        $("#divTotalReport").hide();
+        $("#divFormulaforReport").hide();
+        $("#divFoter").hide(); 
+    }
+}
+
+
