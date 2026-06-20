@@ -1,0 +1,261 @@
+@font-face {
+    font-family: 'Garamond';
+    src: url('Garamond-Bold.woff2') format('woff2'),
+        url('Garamond-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+body
+{
+    width: 796px;
+    margin: 0 auto;
+    	background:url("bg-logo.jpg");
+	background-repeat:no-repeat;
+	background-position:center center;
+}
+
+.container
+{
+    width: 100%;
+}
+.nopadding
+{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.statementofgrades
+{
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#divFormulaforReport
+{
+    /*height:507px;*/ /*HEIGHT ACCORDING TO 12 RECORED ACCORDING TO nITIN*/
+    height: 550px;
+    overflow: hidden;
+}
+.text-centre
+{
+    text-align: center;
+}
+.text-left
+{
+    text-align: left;
+}
+
+.fontsize
+{
+    font-size: 15px;
+}
+
+.floatleft
+{
+    float: left;
+}
+
+.padleft
+{
+    padding-left: 500px;
+}
+
+.clearfix1
+{
+    clear: both;
+}
+
+
+
+.bot
+{
+    padding-bottom: 15px;
+}
+
+.fontrwei
+{
+    font-weight: bold;
+}
+
+.padmar
+{
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.apdtop
+{
+    padding-top: 40px;
+}
+
+.border
+{
+    padding: 10px;
+    background-color: black;
+}
+
+.text-right
+{
+    text-align: right;
+}
+
+.padleft
+{
+    padding-left: 42px;
+}
+.padyop15
+{
+    padding-top: 15px;
+}
+
+
+.bold
+{
+    font-weight: bold;
+}
+.bluebg
+{
+    background-color: #abc7e0;
+}
+.bluebg1
+{
+    background-color: #dce4e9;
+}
+.tdbg
+{
+    height: 25px;
+    background-color: #88b1d7;
+    padding: 5px !important;
+}
+.tdgrey
+{
+    height: 25px;
+    background-color: #e9eaeb;
+    padding: 5px !important;
+}
+.text-blue
+{
+    color: #2c83b1;
+}
+.text-centre
+{
+    text-align: center;
+}
+.footer
+{
+    padding: 5px;
+    bottom: 0px;
+    background-color: #2c83b1;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+th, td
+{
+    padding: 5px !important;
+}
+
+.padbot
+{
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.padbot2
+{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.textcenter
+{
+    text-align: center;
+}
+p
+{
+    margin: 20px 0px 0px 0px !important;
+    padding: 0px;
+}
+.clearfix
+{
+    clear: both;
+}
+
+table
+{
+    border-color: #ffffff;
+}
+.heading
+{
+    font-weight: bold;
+    font-size: 18.0pt;
+   
+    border-bottom: 1px solid #000000;
+    font-family: 'Garamond';
+    margin-bottom: 15px;
+}
+.heading1
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    height: 22.5pt;
+    font-family: 'Garamond';
+    margin-bottom: 10px;
+}
+
+.texthead
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 5px;
+}
+.texthead1
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 25px;
+}
+
+.reg
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.regn
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 5px;
+}
+.prog
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.progn
+{
+    font-weight: bold;
+    font-size: 16.0pt;
+    font-family: 'Garamond';
+    margin-bottom: 5px;
+}
+.bg
+{
+    background: rgba(191, 191, 191, 0.5);
+}

@@ -1,0 +1,48 @@
+//var collector;
+function CallAjax(sender, pageName, methodName, paramString,fnName,showLoading) {
+//    alert(pageName + "/" + methodName);
+//    alert(paramString);
+    if (showLoading == true && sender!="") {
+        //$("#" + sender).append('<div id="dvLoading" class="loading"></div>'); ;
+        $("#" + sender).showLoading();
+    }
+
+    //pageName = pageName.replace("//", "/");
+    $.ajax({
+        type: "POST",
+        url:  pageName + "/" + methodName ,
+        contentType: "application/json; charset=utf-8",
+        data: "{" + paramString + "}",
+        dataType: "json",
+        success: AjaxSucceeded,
+        error: AjaxFailed//,
+        //complete:OnComplete
+    });
+//});
+
+
+ function AjaxSucceeded(data, status) {
+        //alert(data.d);
+     if (showLoading == true && sender != "") {
+            //$("#dvLoading").remove();
+            $("#" + sender).hideLoading();
+        }
+        //collector = data;
+        //alert(data);
+        if (fnName != "") {
+            fnName(data);
+        }
+}
+
+function AjaxFailed(request, status, error) {
+  
+    alert(request.status + ' ' + request.statusText);
+}
+//function OnComplete(data, status) {
+//    alert(data.d);
+//    alert(status);
+//    window[collector] = data;
+//    collector = data;
+//}
+}
+
